@@ -1,0 +1,411 @@
+// General spacing b/w elements
+$theme-gutter: 1.65em;
+
+// Gap on the left on non-mobile screens
+$theme-offset: 10%;
+
+// Mixin for the partial background
+@mixin theme-background( $color ) {
+
+	background: $color;
+
+	@media #{$mq-small} {
+		background: linear-gradient(90deg, white 50%, $color 50%);
+
+		.container {
+			background: linear-gradient(90deg, white $theme-offset, $color $theme-offset);
+		}
+
+	}
+
+}
+
+// Add this into each theme, into whichever @media unstacks its elements
+@mixin reset-mobile-constraints() {
+
+	.image, .image img {
+
+		max-width: initial;
+		max-height: initial;
+
+		width: 100%;
+
+	}
+
+}
+
+// Common styles shared by all the themes
+section.theme {
+
+	.container {
+
+		// Spacing stuff... should be 2x .wrapper's margin
+		padding: $theme-gutter 0;
+	}
+
+	// Thematic topic
+	h2 {
+		@include font-accent();
+		letter-spacing: em(3.54);
+		line-height: 2.1;
+
+		text-transform: uppercase;
+		color: #CC9A2C;
+
+		// Hidden on mobile
+		display: none;
+	}
+
+	// Everything collapses into a column on mobile
+	.wrapper {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
+
+		// More spacing stuff...
+		margin: $theme-gutter/-2 0;
+
+		> * {
+			margin: $theme-gutter/2 0;
+		}
+	}
+
+
+	.image {
+
+		text-align: center;
+		display: block;
+
+		img {
+
+			display: block;
+
+			// Reset this in larger @media for each theme
+			// Add width: 100% to .image, img
+			// See reset-mobile-constraints()
+			max-width: 100%;
+			max-height: 60vh;
+
+		}
+
+		a.lightbox {
+
+			display: block;
+
+			position: relative;
+
+			&:after {
+				$size: 1.9em;
+
+				font-size: 1.2em;
+				content: '+';
+				line-height: $size - 0.1;
+
+				position: absolute;
+				bottom: -$size/8;
+				right: -$size/8;
+
+				width: $size;
+				height: $size;
+
+				background: $color-orange;
+
+				font-weight: bold;
+				font-family: 'Didact Gothic', sans-serif;
+			}
+
+		}
+
+	}
+
+	.content {
+
+		// Weird, but needed for flexbox
+		width: 100%;
+
+		h1 {
+			@include font-heading();
+			letter-spacing: em(0.6);
+			line-height: 1.48;
+
+			// Last spacing stuff...
+			margin-bottom: $theme-gutter - .9;
+		}
+
+		p {
+			@include font-copy();
+			letter-spacing: em(0.04);
+		}
+
+	}
+
+	@media #{$mq-small} {
+
+		.container {
+
+			// Delegate this to .theme on larger screens
+			position: relative;
+
+		}
+
+		.wrapper {
+			margin-left: $theme-offset;
+			padding-left: $theme-offset;
+		}
+
+		h2 {
+			display: block;
+
+			position: absolute;
+			bottom: 2em;
+			left: $theme-offset * 3/4;
+
+			transform: translateX(-50%);
+
+		}
+	}
+
+
+	@media #{$mq-medium} {
+		h2 {
+			left: $theme-offset;
+		}
+	}
+
+}
+
+// Single-image themes default to portrait,
+// Unless `variant` is set to "landscape"
+section.theme-1:not(.theme-landscape),
+section.theme-1.theme-portrait {
+
+	@include theme-background(#DAEFE3);
+
+	@media #{$mq-smaller} {
+
+		@include reset-mobile-constraints();
+
+		.wrapper {
+			flex-direction: row;
+		}
+
+		.image {
+			padding-left: $theme-gutter/2;
+			padding-right: $theme-gutter;
+		}
+
+	}
+
+}
+
+
+section.theme-1.theme-landscape {
+
+	@include theme-background(#E5F0DA);
+
+	@media #{$mq-small} {
+
+		@include reset-mobile-constraints();
+
+		.wrapper {
+			flex-wrap: nowrap;
+		}
+
+		.content {
+			align-self: flex-end;
+			max-width: 65%;
+		}
+
+	}
+
+	@media #{$mq-smallish} {
+		.content {
+			max-width: 50%;
+		}
+	}
+
+}
+
+section.theme-2 {
+	@include theme-background(#F9F5D3);
+
+	.image-1 {
+		order: 1;
+	}
+
+	.image-2 {
+		order: 2;
+	}
+
+	.content {
+		order: 3;
+	}
+
+	@media #{$mq-smaller} {
+
+		@include reset-mobile-constraints();
+
+		.wrapper {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		.image {
+			flex-basis: 50%;
+			padding: 0 $theme-gutter/2;
+		}
+
+	}
+
+	@media #{$mq-medium} {
+
+		.image, .content {
+			padding: 0 $theme-gutter/2;
+		}
+
+		.image {
+			align-self: flex-start;
+		}
+
+		.image-1 {
+			flex-basis: percentage(1/3);
+		}
+
+		.image-2 {
+			flex-basis: percentage(1/4);
+		}
+
+		.content {
+			flex-basis: percentage(1 - 1/3 - 1/4);
+
+			// A bit of an ugly fix...
+			padding-top: 25%;
+		}
+
+	}
+
+}
+
+section.theme-3 {
+	@include theme-background(#EEE0F1);
+
+	.image-1 {
+		order: 1;
+	}
+
+	.image-2 {
+		order: 2;
+	}
+
+	.content {
+		order: 3;
+	}
+
+	.image-3 {
+		order: 4;
+	}
+
+	@media #{$mq-smaller} {
+
+		@include reset-mobile-constraints();
+
+		.wrapper {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		.image {
+			padding: 0 $theme-gutter/2;
+			align-self: flex-end;
+		}
+
+		.image-1 {
+			flex-basis: 35%;
+			order: 1;
+		}
+
+		.image-2 {
+			flex-basis: 42%;
+			order: 2;
+		}
+
+		.image-3 {
+			flex-basis: 23%;
+			order: 3;
+		}
+
+		.content {
+			flex-basis: 60%;
+			order: 4;
+		}
+
+	}
+
+}
+
+section.theme-4 {
+	@include theme-background(#DFF5F3);
+
+	.image-1 {
+		order: 1;
+	}
+
+	.image-2 {
+		order: 2;
+	}
+
+	.content {
+		order: 3;
+
+		display: flex;
+		flex-wrap: wrap;
+
+		p, h1 {
+			flex-basis: 100%;
+		}
+
+	}
+
+	.image-3 {
+		order: 4;
+	}
+
+	.image-4 {
+		order: 5;
+	}
+
+	@media #{$mq-smaller} {
+
+		@include reset-mobile-constraints();
+
+		.wrapper {
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: flex-end;
+		}
+
+		.image {
+			flex-basis: 50%;
+			padding: 0 $theme-gutter/2;
+		}
+
+		.image-2 a {
+			margin: 0 5%;
+		}
+
+		.image-3 a {
+			margin: 0 18%;
+		}
+
+		.content {
+
+			p, h1 {
+				flex-basis: 50%;
+			}
+
+		}
+
+	}
+
+}

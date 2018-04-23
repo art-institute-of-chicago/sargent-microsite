@@ -1,0 +1,193 @@
+section.slideshow {
+
+	@include container-absolute( 20em, 30em, false );
+
+	.swiper-container {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	.swiper-slide {
+
+		position: relative;
+
+		.slide-mobile, .slide-desktop {
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		.slide-desktop {
+			display: none;
+		}
+
+		@media #{$mq-smallish} {
+
+			.slide-mobile {
+				display: none;
+			}
+
+			.slide-desktop {
+				display: block;
+			}
+
+		}
+
+	}
+
+	.swiper-pagination-bullet {
+		background-color: white;
+		opacity: 1;
+
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+
+		width: 10px;
+		height: 10px;
+
+	}
+
+	.swiper-pagination-bullet-active {
+		background-color: #9B9B9B;
+	}
+
+	.title-card {
+		background-color: #D1E5D9;
+
+		// Balance out .swiper-pagination
+		// Pagination is positioned in pixels, not em's
+		position: absolute;
+		right: 0;
+		bottom: 41px;
+
+		z-index: 2;
+
+		// padding-right changes w/ screen-size
+		padding-top: 1.125em;
+		padding-bottom: 1.125em;
+		padding-left: 1.65em;
+
+		// values are between()'d $bp-smallest and $bp-medium
+		$width-min: 18em;
+		$width-max: 26em;
+
+		$pad-min: 2em;
+		$pad-max: 5em;
+
+		$logo-min: 3em;
+		$logo-max: 3.5em;
+
+		$logo-pad-min: 1em;
+		$logo-pad-max: 1.125em;
+
+		width: $width-min;
+		padding-right: $pad-min;
+
+		img {
+			height: $logo-min;
+			margin-bottom: $logo-pad-min;
+		}
+
+		@media #{$mq-smallest} {
+
+			width: between($width-min, $width-max, $bp-smallest, $bp-medium);
+			padding-right: between($pad-min, $pad-max, $bp-smallest, $bp-medium);
+
+			img {
+				height: between($logo-min, $logo-max, $bp-smallest, $bp-medium);
+				margin-bottom: between($logo-pad-min, $logo-pad-max, $bp-smallest, $bp-medium);
+			}
+
+		}
+
+		@media #{$mq-medium} {
+
+			width: $width-max;
+			padding-right: $pad-max;
+
+
+			img {
+				height: $logo-max;
+				margin-bottom: $logo-pad-max;
+			}
+
+		}
+
+		.events {
+
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			justify-content: space-between;
+
+			.event {
+
+				$font-title-min: 0.8em;
+				$font-title-max: 1em;
+
+				$font-date-min: 0.7em;
+				$font-date-max: 0.9em;
+
+				span {
+					display: block;
+				}
+
+				.title {
+
+					font-family: 'Amiri', serif;
+					font-style: italic;
+
+					font-size: $font-title-min;
+
+				}
+
+				.date {
+
+					font-family: 'Didact Gothic', sans-serif;
+
+					text-transform: uppercase;
+					letter-spacing: em(1.1);
+
+					font-size: $font-date-min;
+
+				}
+
+				@media #{$mq-smallest} {
+
+					.title {
+						font-size: between($font-title-min, $font-title-max, $bp-smallest, $bp-medium);
+					}
+
+					.date {
+						font-size: between($font-date-min, $font-date-max, $bp-smallest, $bp-medium);
+					}
+
+				}
+
+				@media #{$mq-medium} {
+
+					.title {
+						font-size: $font-title-max;
+					}
+
+					.date {
+						font-size: $font-date-max;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

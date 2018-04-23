@@ -1,0 +1,256 @@
+// Header's breakpoints are mostly independent of the other sections
+#header-placeholder {
+	background-color: $color-blue;
+	width: 100%;
+
+	position: relative;
+}
+
+header {
+
+	transform: translate3d(0, 0, 0);
+
+	// Header is too large at smallest breakpoint
+	// This will scale it down, then up smoothly
+	$font-min: 0.8em;
+	$font-max: 1em;
+
+	font-size: $font-min;
+
+	@media #{$mq-smallest} {
+		font-size: between( $font-min, $font-max, $bp-smallest, $bp-medium );
+	}
+
+	@media #{$mq-medium} {
+		font-size: $font-max;
+	}
+
+	// TODO: Make these em-dependent?
+	@mixin break-logo {
+		@media (max-width: 960px) {
+			@content;
+		}
+	}
+
+	@mixin break-dates {
+		@media (max-width: 880px) {
+			@content;
+		}
+	}
+
+	@mixin break-member {
+		@media (max-width: 770px) {
+			@content;
+		}
+	}
+
+	@mixin break-title {
+		@media (max-width: 580px) {
+			@content;
+		}
+	}
+
+	@mixin break-margins {
+		@media (max-width: 400px) {
+			@content;
+		}
+	}
+
+	@mixin break-ticket {
+		@media (max-width: 380px) {
+			@content;
+		}
+	}
+
+	position: absolute;
+	z-index: 2;
+
+	background-color: $color-blue;
+	width: 100%;
+
+	.container {
+
+		justify-content: space-between;
+
+		// Applies to self and immediate child divs
+		&, > div {
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+		}
+
+		// decrease padding on sticky
+		transition: padding 0.25s;
+		padding: 1em 0;
+
+	}
+
+	// Disable word-wrapping by default
+	* {
+		white-space: nowrap;
+	}
+
+	.header-left {
+
+		justify-content: flex-start;
+
+		flex-grow: 2;
+
+		a {
+			display: inline-block;
+			position: relative;
+
+			transition: height 0.25s, width 0.25s;
+
+			height: calc( 28px + 0.8em );
+			width: calc( 28px + 0.8em );
+
+			@media (min-width: 420px) {
+				width: 4em;
+				height: 4em;
+			}
+
+			img {
+				position: absolute;
+				top: 0;	left: 0;
+
+				height: 100%;
+				margin: auto;
+			}
+
+
+		}
+
+		.exhibit {
+
+			color: $color-yellow;
+
+			padding: 0 0.5em;
+
+			@include break-margins {
+				padding-right: 20px;
+			}
+
+			span {
+				display: inline-block;
+			}
+
+			span.title {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+
+				text-transform: uppercase;
+				letter-spacing: 0.2em;
+
+				font-size: 1.2em;
+			}
+
+		}
+
+		@media #{$mq-small} {
+			.exhibit {
+				padding: 0 1em;
+			}
+		}
+
+
+	}
+
+	.header-right {
+
+		justify-content: space-between;
+
+		flex-grow: 1;
+
+		span.dates {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+
+			text-transform: uppercase;
+			letter-spacing: em(0.76);
+
+			font-size: 0.8em;
+
+			color: $color-yellow;
+
+			@include break-dates {
+
+				text-align: center;
+
+				.start, .end {
+					display: block;
+				}
+
+				.dash {
+					display: none;
+				}
+
+			}
+
+		}
+
+		.btn-member {
+			@include break-member {
+				display: none;
+			}
+		}
+
+		.btn-ticket .verb {
+			@include break-ticket {
+				display: none;
+			}
+		}
+
+	}
+
+	.sub-header {
+
+		background-color: $color-orange;
+		text-align: center;
+
+		font-family: 'Didact Gothic', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: em(0.04);
+
+		padding: 0.2em;
+		width: 100%;
+		z-index: 2;
+
+		white-space: normal;
+
+		// Needs adjustment due to header scaling
+		$font-min: 1em;
+		$font-max: 0.75em;
+
+		font-size: $font-min;
+
+		@media #{$mq-smallest} {
+			font-size: between( $font-min, $font-max, $bp-smallest, $bp-medium );
+		}
+
+		@media #{$mq-medium} {
+			font-size: $font-max;
+		}
+
+	}
+
+
+	&.sticky {
+
+		transform: translate3d(0, 0, 0);
+
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		.container {
+			padding: 0.5em 0;
+		}
+
+		// Match buttons w/ constant padding
+		.header-left a {
+			height: calc( 28px + 0.8em );
+			width: calc( 28px + 0.8em );
+		}
+	}
+}

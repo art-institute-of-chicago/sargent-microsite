@@ -1,0 +1,54 @@
+section.shop {
+
+	background-color: #C2D9CC;
+
+	.shop-item {
+
+		@include related-item( 2, 2, 3, 4, 3, 4 );
+
+		a {
+
+			display: inline-block;
+			width: 100%;
+
+			.item-image {
+
+				background-color: #F8F8F8;
+				width: 100%;
+				height: 0;
+
+				padding-bottom: 100%;
+
+				background-position: center center;
+				background-size: contain;
+				background-repeat: no-repeat;
+
+				margin-bottom: 0.5em;
+
+			}
+
+			.item-title {
+				font-family: 'Didact Gothic', sans-serif;
+				font-size: 0.85em; // ~10px
+
+				@media #{$mq-medium} {
+					font-size: 1em;
+				}
+
+			}
+
+		}
+
+		.item-price {
+			font-family: 'Didact Gothic', sans-serif;
+			font-weight: bold;
+			color: white;
+
+			font-size: 0.65em;
+			line-height: 3;
+
+			letter-spacing: em(1.59);
+
+		}
+	}
+}

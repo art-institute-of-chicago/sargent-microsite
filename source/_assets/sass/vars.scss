@@ -1,0 +1,76 @@
+// Colors - only the ones that are re-used
+// One-off colors are set in element scope
+$color-orange:       #CC9A2C;
+$color-blue:         #1A4176;
+$color-yellow:       #FBF1BF;
+
+$color-text:         #0B1333;
+
+
+// Breakpoints
+$bp-smallest:      20em; // 320px
+$bp-smaller:       30em; // 480px
+$bp-small:       37.5em; // 600px
+$bp-smallish:      48em; // 768px
+$bp-medium:        64em; // 1024px
+$bp-large:     85.375em; // 1366px
+$bp-xlarge:       120em; // 1920px
+$bp-xxlarge:      160em; // 2560px
+
+
+// Media Queries
+$mq-smallest:  "(min-width: #{$bp-smallest})";
+$mq-smaller:   "(min-width: #{$bp-smaller})";
+$mq-small:     "(min-width: #{$bp-small})";
+$mq-smallish:  "(min-width: #{$bp-smallish})";
+$mq-medium:    "(min-width: #{$bp-medium})";
+$mq-large:     "(min-width: #{$bp-large})";
+$mq-xlarge:    "(min-width: #{$bp-xlarge})";
+$mq-xxlarge:   "(min-width: #{$bp-xxlarge})";
+$mq-retina:    "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+
+
+// Container margins - used by get-vw()
+// https://css-tricks.com/optimizing-large-scale-displays/
+$mg-smallest:  4%;
+$mg-medium:   12%;
+$mg-large:    18%;
+$mg-xlarge:   24%;
+
+
+// Font-Size
+$base-font-size: 1em;
+
+// Lightbox sizing
+$lightbox-border: 1em;
+
+// Fonts - calibrated to theme blocks
+// heading is 1.4 of copy @ 320, 1.5555 @ 1024
+@mixin font-heading() {
+	font-family: 'Didact Gothic', sans-serif;
+	font-weight: normal;
+	font-size: 1.4em;
+
+	@media #{$mq-medium} {
+		font-size: (28/18) * 1em;
+	}
+
+	// 16.8 @ 320, 28 @ 1024
+	// line-height: 24 @ 320, 40 @ 1024
+	// letter-spacing: 0.04 @ 320, 0.06 @ 1024
+}
+
+@mixin font-accent() {
+	font-family: 'Didact Gothic', sans-serif;
+	font-weight: bold;
+	font-size: (16/18) * 1em;
+}
+
+@mixin font-copy() {
+	font-family: 'Amiri', serif;
+	font-weight: normal;
+	font-size: 1em;
+
+	// font-size: (12/16) * 1em; // 12 @ 320, 18 @ 1024
+	// font-size: (12/16) * 1em; // 12 @ 320, 18 @ 1024
+}

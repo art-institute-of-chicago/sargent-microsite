@@ -1,0 +1,61 @@
+section.video {
+
+	background-color: #F8E2E8;
+
+	iframe {
+		padding: 1px;
+	}
+
+	.container img.unpublished {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 100%;
+	}
+	.video-js {
+		position: relative;
+		width: 100%;
+		z-index: 0;
+	}
+
+	.vjs-big-play-centered .vjs-big-play-button {
+
+		background-image: url('../images/play.png');
+		background-position: center center;
+		background-size: cover;
+
+		margin-top: 0;
+		margin-left: 0;
+
+		transform: translate(-50%, -50%);
+	}
+
+	.video-js .vjs-big-play-button {
+		background-color: rgba(0,0,0,0);
+
+		border-radius: 50%;
+		border: 0;
+
+		height: 3em;
+		width: 3em;
+
+		@media #{$mq-smallish} {
+			height: 5em;
+			width: 5em;
+		}
+	}
+
+	.video-js:hover .vjs-big-play-button {
+		background-color: rgba(0,0,0,.3);
+	}
+
+	.vjs-icon-play:before,
+	.video-js .vjs-big-play-button:before,
+	.video-js .vjs-play-control:before {
+		content: "";
+	}
+
+	.video-js .vjs-time-control {
+		line-height: 3em;
+	}
+}

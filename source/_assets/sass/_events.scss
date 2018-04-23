@@ -1,0 +1,11 @@
+section.events {
+
+	background-color: #F9D3C2;
+
+	.event {
+
+		@include related-item( 1, 2, 2, 3, 3, 3 );
+
+	}
+
+}

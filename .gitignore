@@ -1,0 +1,8 @@
+/node_modules/
+/vendor/
+/source/css/
+/source/js/
+/archive/
+/build_*
+/config.*.php
+/_tmp/

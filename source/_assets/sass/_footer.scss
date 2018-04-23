@@ -1,0 +1,29 @@
+footer {
+
+	background-color: #000000;
+	color: white;
+
+	padding: 50px 0;
+
+	font-size: 0.8em;
+
+	p {
+		padding-bottom: 1.5em;
+	}
+
+	img {
+		margin-top: 1em;
+	}
+
+	.text {
+		columns: 1;
+		margin-bottom: 2em;
+	}
+
+	@media #{$mq-small} {
+		.text {
+			columns: 2;
+		}
+	}
+
+}

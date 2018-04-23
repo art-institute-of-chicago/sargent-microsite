@@ -1,0 +1,140 @@
+// This is meant to apply to "related items" sections,
+//   i.e. resources, events, and shop
+
+// @import this mixin into the "items" of these sections!
+
+@mixin related-item( $n-smallest, $n-smaller, $n-small, $n-smallish, $n-medium, $n-large ) {
+
+	padding: $mg-smallest;
+
+	@media #{$mq-medium} {
+		padding: 1em;
+	}
+
+	width: percentage(1/$n-smallest);;
+
+	@media #{$mq-small} {
+		width: percentage(1/$n-smallest);
+	}
+
+	@media #{$mq-small} {
+		width: percentage(1/$n-smaller);
+	}
+
+	@media #{$mq-smallish} {
+		width: percentage(1/$n-smallish);
+	}
+
+	@media #{$mq-medium} {
+		width: percentage(1/$n-medium);
+	}
+
+	@media #{$mq-large} {
+		width: percentage(1/$n-large);
+	}
+
+}
+
+// Add this class to resources, events, and shop!
+section.related {
+
+	position: relative;
+
+	padding-bottom: 2em;
+
+	@media #{$mq-medium} {
+		padding-top: 2em;
+	}
+
+	.container {
+
+		@media #{$mq-medium} {
+			display: flex;
+			justify-content: space-between;
+		}
+
+	}
+
+	.title {
+
+		flex-basis: 20%;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		padding-bottom: 0.5em;
+
+		$font-min: 2.125em;
+		$font-max: 2.3em;
+
+		h2 {
+			font-family: 'Didact Gothic', sans-serif;
+			font-size: $font-min;
+			line-height: 1.25;
+			color: $color-blue;
+
+			padding: 0.5em 0;
+			padding-right: 0.5em;
+
+			@media #{$mq-smallest} {
+
+				font-size: between( $font-min, $font-max, $bp-smallest, $bp-medium );
+
+			}
+
+		}
+
+
+		@media #{$mq-medium} {
+
+			display: block;
+			flex-wrap: wrap;
+			margin-right: 2em;
+
+			h2 {
+				font-size: $font-max;
+				padding-bottom: 1em;
+				padding-right: 0em;
+			}
+		}
+
+	}
+
+	.wrapper {
+
+		flex-basis: 80%;
+
+		display: flex;
+		flex-wrap: wrap;
+
+		margin: -#{$mg-smallest};
+
+		@media #{$mq-medium} {
+			margin: -1em;
+		}
+
+		// See @mixin above for nested items
+
+	}
+
+	.item {
+		h4 {
+			font-family: 'Didact Gothic', sans-serif;
+			font-size: 1.2em;
+			margin-bottom: 1.25em;
+		}
+
+		h5 {
+			font-family: 'Didact Gothic', sans-serif;
+			font-weight: bold;
+			color: #ffffff;
+
+			font-size: 0.66em;
+			height: 3em;
+			line-height: 1.5;
+			letter-spacing: 0.3em;
+			text-transform: uppercase;
+		}
+	}
+}

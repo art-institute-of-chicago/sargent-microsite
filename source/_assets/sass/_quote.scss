@@ -1,0 +1,92 @@
+section.quote {
+
+	background-color: #4A4A4A;
+
+	position: relative;
+	overflow: hidden;
+
+	.container {
+		// TODO: Change to em's for font-resize...
+		@include container-absolute( 83%, 62% );
+	}
+
+	// Some browsers bug out when you mix flex + absolute
+
+	.background, blockquote {
+		position: absolute;
+		top: 50%; left: 50%;
+		transform: translate( -50%, -50%);
+	}
+
+	.background {
+
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		height: 100%;
+		width: 100%;
+
+		opacity: 0.53 * 0.35;
+
+	}
+
+	blockquote {
+
+		@include font-copy();
+		letter-spacing: em(0.09);
+		line-height: 1.3;
+
+		text-align: center;
+		color: white;
+
+		border-color: white;
+		border-style: solid;
+
+		border-width: 4px;
+
+		// Adds some definition to the letters
+		text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+
+		$font-min: 1.2em;
+		$font-max: 2.4em;
+
+		$pad-min: 1em;
+		$pad-max: 2.5em;
+
+		font-size: $font-min;
+		padding: $pad-min/2 $pad-min;
+
+		width: marginalize( 100%, $bp-smallest );
+
+		@media #{$mq-smallest} {
+			font-size: between( $font-min, $font-max, $bp-smallest, $bp-large );
+			$pv: between( $pad-min/2, $pad-max/2, $bp-smallest, $bp-medium );
+			$ph: between( $pad-min, $pad-max, $bp-smallest, $bp-medium );
+			padding: $pv $ph;
+
+		}
+
+		@media #{$mq-small} {
+			width: 85%;
+		}
+
+		@media #{$mq-medium} {
+			// padding: $pad-max/2 $pad-max;
+		}
+
+		@media #{$mq-large} {
+			// font-size: $font-max;
+		}
+
+		p:first-of-type:before {
+			content: "“";
+		}
+
+		p:last-of-type:after {
+			content: "”";
+		}
+
+	}
+
+}

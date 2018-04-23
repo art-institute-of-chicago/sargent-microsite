@@ -1,0 +1,94 @@
+$browser-context: 16;  // Default font size
+$design-context: 1024; // Desktop design width
+
+
+/**
+ * Converts a px value to em. Useful for adapting designs.
+ * Note that $pixels can be in px or unitless:
+ * Both `em(32px)` and `em(32)` are valid calls.
+ *
+ * https://css-tricks.com/snippets/sass/px-to-em-functions/
+ */
+@function em($pixels, $context: $browser-context) {
+	@if (unitless($pixels)) {
+		$pixels: $pixels * 1px;
+	}
+
+	@if (unitless($context)) {
+		$context: $context * 1px;
+	}
+
+	@return $pixels / $context * 1em;
+}
+
+
+/**
+ * Scales a value to account for percentile .container margins
+ * See quote.scss for example usage.
+ *
+ * http://sassbreak.com/viewport-relative-headings-with-sass/
+ */
+@function marginalize($value, $breakpoint) {
+
+	@if $breakpoint == $bp-smallest {
+		@return $value * (1 - ($mg-smallest/100%)*2);
+	}
+
+	@if $breakpoint == $bp-medium {
+		@return $value * (1 - ($mg-medium/100%)*2);
+	}
+
+	@if $breakpoint == $bp-large {
+		@return $value * (1 - ($mg-large/100%)*2);
+	}
+
+	@if $breakpoint == $bp-xlarge {
+		@return $value * (1 - ($mg-xlarge/100%)*2);
+	}
+
+	@return $value;
+
+}
+
+/**
+ * Converts a px value to vw. Useful for scaling designs.
+ * If 2nd arg is a $bp-*, result will be marginalize()'d
+ *
+ * http://sassbreak.com/viewport-relative-headings-with-sass/
+ */
+@function get-vw($target, $breakpoint: null, $context: $design-context) {
+	$vw-context: ($context*.01) * 1px;
+	$vw-result: ($target/$vw-context) * 1vw;
+
+	$vw-result: marginalize( $vw-result, $breakpoint );
+
+	@return $vw-result;
+}
+
+
+/**
+ * between() requires that all of the arguments share the same unit
+ * given that we use em's throughout, this is a sanity-test function
+ */
+
+@function is-number($value) {
+	@return type-of($value) == 'number';
+}
+
+@function is-em($value) {
+	@return is-number($value) and index('em', unit($value)) != null;
+}
+
+/**
+ * Computes a CSS calc function that betweens a value from
+ * A to B over viewport-width A to viewport-width B.
+ * Requires a media query to cap the value at B.
+ *
+ * https://css-tricks.com/between-the-lines/
+ */
+@function between($to, $from, $toWidth, $fromWidth) {
+	$slope: ($to - $from) / ($toWidth - $fromWidth);
+	$base: $from - $slope * $fromWidth;
+
+	@return calc(#{$base} + #{100vw * $slope});
+}

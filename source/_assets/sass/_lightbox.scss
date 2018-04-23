@@ -1,0 +1,11 @@
+// Lightbox has a "matrix" of states:
+//  - mobile -> desktop
+//  - hidden -> opened
+//  - blurb -> expanded
+// Ideally, mobile & hidden should be the "defaults"
+// But blurb / expanded should have effects only on mobile
+// Therefore, desktop is conceptually the default
+
+@import 'lightbox/expandable';
+@import 'lightbox/expanded';
+@import 'lightbox/default';

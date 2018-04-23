@@ -1,0 +1,113 @@
+section.call-to-action {
+
+	background-color: #1F3047;
+	color: $color-orange;
+
+	text-align: center;
+
+	.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding-bottom: 1em;
+	}
+
+	// Come explore Gauguin
+	h1 {
+
+		@include font-copy();
+		font-style: italic;
+
+		letter-spacing: em(0.07);
+		color: $color-orange;
+
+		margin: 1em 0 0.5em;
+
+		font-size: 2.1em;
+
+	}
+
+	// Learn more about planning a visit
+	h2 {
+
+		@include font-heading();
+		line-height: 1.2;
+
+		text-transform: uppercase;
+		letter-spacing: em(0.84);
+		color: white;
+
+		// Margins don't collapse in flex...
+		// We'll assume h1 and ul have margins!
+
+		// Adjust these for larger screens
+		font-size: 1em;
+		width: 75%;
+
+		a {
+			display: inline-block;
+			border-bottom: 0.15em solid white;
+			padding-bottom: 0.5em;
+		}
+	}
+
+	// Buttons! See also main.scss
+	ul {
+
+		display: flex;
+		flex-direction: column;
+
+		list-style-type: none;
+		margin: 0 0 1.5em;
+		
+		li {
+			display: block;
+			margin: 0.75em;
+		}
+
+		a {
+			letter-spacing: em(0.92);
+			font-size: 1em;
+			padding: 1em 2em;
+		}
+	}
+
+	// Exhibition dates
+	h3 {
+		font-family: 'Didact Gothic', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: em(1.1);
+
+		font-size: 1.5em;
+		margin-bottom: 1em;
+	}
+
+	// Museum hours
+	p {
+		font-size: 1em;
+		margin-bottom: 1em;
+	}
+
+	@media #{$mq-smallish} {
+
+		ul {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		ul a {
+			font-size: 0.875em;
+			padding: 0.875em 1.5em;
+		}
+
+	}
+
+	@media #{$mq-medium} {
+
+		h2 {
+			font-size: 1.1em;
+		}
+
+	}
+
+}

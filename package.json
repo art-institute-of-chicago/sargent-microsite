@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "hasbin": "^1.2.3",
+    "http-server": "^0.10.0",
+    "laravel-elixir": "^6.0.0-15",
+    "laravel-elixir-browsersync-official": "^1.0.0",
+    "laravel-elixir-remove": "^0.2.1",
+    "open": "0.0.5",
+    "yargs": "^4.6.0"
+  }
+}

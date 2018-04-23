@@ -1,0 +1,12 @@
+section.resources {
+
+	background-color: #DDB195;
+
+		.resource {
+
+		@include related-item( 1, 2, 2, 3, 3, 3 );
+
+
+	}
+
+}

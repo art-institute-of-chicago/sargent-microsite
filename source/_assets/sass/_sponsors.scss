@@ -1,0 +1,170 @@
+section.sponsors {
+
+	background-color: #232323;
+	color: white;
+
+	// All sections except media have titles
+	h5 {
+		text-transform: uppercase;
+		font-family: 'Didact Gothic', sans-serif;
+		letter-spacing: em(1.33);
+		font-size: 0.875em;
+	}
+
+	// Sponsor icons are not links!
+	img {
+		margin-right: 1em;
+	}
+
+	img:last-of-type {
+		margin-right: 0;
+	}
+
+	.container {
+
+		display: flex;
+		flex-wrap: wrap;
+
+		justify-content: space-between;
+		align-items: flex-start;
+
+		// Spacing stuff...
+		> div {
+
+			align-self: stretch;
+
+			display: flex;
+			flex-wrap: wrap;
+
+			flex-direction: column;
+			align-items: flex-stretch;
+
+			justify-content: space-between;
+
+			padding: 0.75em;
+			overflow: hidden;
+
+			span, div, h3 {
+				// white-space: nowrap;
+				padding: 0.75em 0;
+			}
+
+			h5 {
+				padding: 0.75em 0;
+				// flex-basis: 100%;
+			}
+
+		}
+
+		.links {
+
+			align-items: center;
+
+			flex-basis: 100%;
+
+			h5 {
+				display: none;
+			}
+
+			div {
+
+				// Normal padding + half of img.aic height - half of our height
+				padding: calc(0.75em + #{45px / 2} - #{1em / 2}) 0;
+
+				// Social media icons
+				a {
+					display: inline-block;
+					font-size: 2em;
+					line-height: 1;
+					height: 1em;
+
+					vertical-align: middle;
+
+					img {
+						opacity: 1;
+						height: 100%;
+						margin: 0 0.25em;
+					}
+
+					&:first-of-type img {
+						margin-left: 0;
+					}
+
+					&:last-of-type img {
+						margin-right: 0;
+					}
+
+				}
+			}
+
+		}
+
+		.organized {
+
+			flex-basis: 100%;
+
+			white-space: nowrap;
+
+			img.aic {
+				height: 45px;
+			}
+
+		}
+
+		.sponsor {
+			flex-basis: 100%;
+
+			img {
+				max-width: 100%;
+				margin-bottom: 13px;
+			}
+		}
+
+
+		@media #{$mq-small} {
+
+			.organized {
+				flex-basis: 70%;
+			}
+
+			.sponsor {
+				flex-basis: 30%;
+			}
+
+
+		}
+
+		@media #{$mq-medium} {
+
+			.links {
+
+				flex-basis: 30%;
+
+				align-items: flex-start;
+				padding-left: 0;
+
+				h5 {
+					display: block;
+				}
+
+				div {
+					// Mimic presence of h5
+					// margin-top: 1.75em + 0.875em * 1.5;
+				}
+			}
+
+			.organized {
+				flex-basis: 50%;
+			}
+
+			.sponsor {
+				flex-basis: 20%;
+
+				padding-right: 0;
+			}
+
+		}
+
+	}
+
+}

@@ -25,10 +25,10 @@ To get started with this project, use the following commands:
 
 ```shell
 # Clone the repo to your computer
-git clone https://github.com/art-institute-of-chicago/gauguin-microsite.git
+git clone https://github.com/art-institute-of-chicago/sargent-microsite.git
 
 # Enter the folder that was created by the clone
-cd gauguin-microsite
+cd sargent-microsite
 
 # Install PHP dependencies (notably Jigsaw)
 composer install

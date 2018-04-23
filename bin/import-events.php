@@ -1,5 +1,5 @@
 <?php
-$json = file_get_contents("http://www.artic.edu/events-json/7174");
+$json = file_get_contents("http://www.artic.edu/events-json/7904");
 $data = json_decode($json);
 
 foreach ($data as $event) {
@@ -7,7 +7,7 @@ foreach ($data as $event) {
     $yaml .= "extends: _partials.event\n";
     $yaml .= "title: \"" .$event->title ."\"\n";
     if ($event->body != $event->summary) {
-        $yaml .= "description: " .$event->summary ."\n";
+        $yaml .= "description: \"" .str_replace('"', '\"', $event->summary) ."\"\n";
     }
     else {
         $yaml .= "description: \n";

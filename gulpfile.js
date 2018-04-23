@@ -40,7 +40,7 @@ elixir(function(mix) {
     mix.remove('source/**/*~');
 
     // Run Jigsaw
-    mix.exec(bin.path() + ' build ' + env, [
+    mix.exec(bin.path() + ' build ' + env + ' -vvv', [
         './source/*',
         './source/**/*',
         '!./source/_assets/**/*'

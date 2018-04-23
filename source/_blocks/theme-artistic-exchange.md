@@ -2,10 +2,10 @@
 extends: "_partials.theme"
 weight: 700
 title: "Artistic Exchange"
-theme: Vision
+background: "#DFDEDE"
 images:
-  - image: "tehamana.png"
-    lightbox: "tehamana"
+  - image: "portrait-of-whistler_press.jpg"
+    lightbox: "whistler"
     alt: "Lorem ipsum."
 ---
 

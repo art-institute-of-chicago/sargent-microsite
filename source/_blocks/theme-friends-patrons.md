@@ -1,12 +1,11 @@
 ---
 extends: "_partials.theme"
-variant: "landscape"
 weight: 600
 title: "Friends, Patrons, Champions"
-theme: Innovation
+background: "#AFB1A5"
 images:
-  - image: "faa_heihe.png"
-    lightbox: "faaheihe"
+  - image: "IM027378-int_press.jpg"
+    lightbox: "deering"
     alt: "Lorem ipsum."
 ---
 

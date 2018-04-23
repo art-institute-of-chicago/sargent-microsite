@@ -3,10 +3,10 @@ extends: "_partials.theme"
 variant: "portrait"
 weight: 300
 title: "Artist on the Rise, Abroad and at Home"
-theme: Origins
+background: "#CBDBD0"
 images:
-  - image: "casket.png"
-    lightbox: "casket"
+  - image: "la-carmencita-NEW_press.jpg"
+    lightbox: "carmencita"
     alt: "Lorem ipsum."
 ---
 

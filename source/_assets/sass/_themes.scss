@@ -7,17 +7,6 @@ $theme-offset: 10%;
 // Mixin for the partial background
 @mixin theme-background( $color ) {
 
-	background: $color;
-
-	@media #{$mq-small} {
-		background: linear-gradient(90deg, white 50%, $color 50%);
-
-		.container {
-			background: linear-gradient(90deg, white $theme-offset, $color $theme-offset);
-		}
-
-	}
-
 }
 
 // Add this into each theme, into whichever @media unstacks its elements
@@ -41,19 +30,6 @@ section.theme {
 
 		// Spacing stuff... should be 2x .wrapper's margin
 		padding: $theme-gutter 0;
-	}
-
-	// Thematic topic
-	h2 {
-		@include font-accent();
-		letter-spacing: em(3.54);
-		line-height: 2.1;
-
-		text-transform: uppercase;
-		color: #CC9A2C;
-
-		// Hidden on mobile
-		display: none;
 	}
 
 	// Everything collapses into a column on mobile
@@ -149,21 +125,6 @@ section.theme {
 
 		}
 
-		.wrapper {
-			margin-left: $theme-offset;
-			padding-left: $theme-offset;
-		}
-
-		h2 {
-			display: block;
-
-			position: absolute;
-			bottom: 2em;
-			left: $theme-offset * 3/4;
-
-			transform: translateX(-50%);
-
-		}
 	}
 
 

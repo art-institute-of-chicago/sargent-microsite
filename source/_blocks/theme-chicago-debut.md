@@ -2,10 +2,10 @@
 extends: "_partials.theme"
 weight: 500
 title: "Sargent’s Chicago Debut"
-theme: Materials
+background: "#F6D0B6"
 images:
-  - image: "noanoa.png"
-    lightbox: "noanoa"
+  - image: "street-in-venice_press.jpg"
+    lightbox: "venice"
     alt: "Lorem ipsum."
 ---
 

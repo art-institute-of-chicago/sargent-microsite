@@ -2,9 +2,9 @@
 extends: "_partials.theme"
 weight: 800
 title: "An Artist of Many Talents"
-theme: Exploration
+background: "#BFD2C1"
 images:
-  - image: "DesignFan.jpg"
+  - image: "IM022017-int_press.jpg"
     lightbox: "DesignFan"
     alt: "Lorem ipsum."
 ---

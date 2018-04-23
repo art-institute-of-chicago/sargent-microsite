@@ -1,4 +1,4 @@
 ---
 extends: "_partials.resources"
-weight: 1200
+weight: 1100
 ---

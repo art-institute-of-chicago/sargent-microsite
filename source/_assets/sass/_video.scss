@@ -12,13 +12,15 @@ section.video {
 		display: block;
 		width: 100%;
 	}
+
 	.video-js {
 
 		background-color: transparent;
 		overflow: hidden;
 
+		// https://github.com/videojs/videojs-youtube/issues/429
 		&.vjs-has-started > div > iframe {
-			margin-left: -2px;
+			// margin-left: -2px;
 		}
 
 		position: relative;

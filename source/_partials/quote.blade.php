@@ -6,7 +6,11 @@
 	<div class="container">
 
 		<blockquote class="balance-text">
+
 			{!! $content !!}
+
+			<h4 class="attribution">{{ $page->attribution }}</h4>
+
 		</blockquote>
 
 	</div>

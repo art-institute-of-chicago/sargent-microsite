@@ -7,7 +7,7 @@ section.quote {
 
 	.container {
 		// TODO: Change to em's for font-resize...
-		@include container-absolute( 83%, 62% );
+		@include container-absolute( 83%, 75% );
 	}
 
 	// Some browsers bug out when you mix flex + absolute
@@ -85,6 +85,21 @@ section.quote {
 
 		p:last-of-type:after {
 			content: "”";
+		}
+
+		h4.attribution {
+
+			text-transform: uppercase;
+			margin-top: 1.5em;
+
+			font-weight: light;
+
+			font-size: 0.75em;
+
+			&:before {
+				content: "—";
+			}
+
 		}
 
 	}

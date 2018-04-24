@@ -104,6 +104,7 @@ section.theme {
 			@include font-heading();
 			letter-spacing: em(0.6);
 			line-height: 1.48;
+			text-transform: uppercase;
 
 			// Last spacing stuff...
 			margin-bottom: $theme-gutter - .9;

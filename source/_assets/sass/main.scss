@@ -4,6 +4,13 @@
 // Import functions - some require variables!
 @import 'func';
 
+// Import fonts
+@import url("//hello.myfonts.net/count/366d5a");
+
+@font-face {font-family: 'BrandonGrotesqueWeb-Bold';src: url('/webfonts/366D5A_0_0.eot');src: url('/webfonts/366D5A_0_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/366D5A_0_0.woff2') format('woff2'),url('/webfonts/366D5A_0_0.woff') format('woff'),url('/webfonts/366D5A_0_0.ttf') format('truetype');}
+
+@font-face {font-family: 'BrandonGrotesqueWeb-Regular';src: url('/webfonts/366D5A_1_0.eot');src: url('/webfonts/366D5A_1_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/366D5A_1_0.woff2') format('woff2'),url('/webfonts/366D5A_1_0.woff') format('woff'),url('/webfonts/366D5A_1_0.ttf') format('truetype');}
+
 // Some reasonable global settings...
 html {
 	overflow-y: scroll;

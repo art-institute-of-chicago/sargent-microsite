@@ -1,5 +1,5 @@
 // General spacing b/w elements
-$theme-gutter: 1.65em;
+$theme-gutter: 2em;
 
 // Gap on the left on non-mobile screens
 $theme-offset: 10%;
@@ -40,7 +40,7 @@ section.theme {
 		justify-content: space-between;
 
 		// More spacing stuff...
-		margin: $theme-gutter/-2 0;
+		margin: $theme-gutter/2 0;
 
 		> * {
 			margin: $theme-gutter/2 0;
@@ -113,6 +113,7 @@ section.theme {
 		p {
 			@include font-copy();
 			letter-spacing: em(0.04);
+			margin-bottom: $theme-gutter;
 		}
 
 	}
@@ -154,8 +155,8 @@ section.theme-1.theme-portrait {
 
 		.image {
 			padding-left: $theme-gutter/2;
-			padding-right: $theme-gutter;
 		}
+		padding-right: $theme-gutter*2.5;
 
 	}
 

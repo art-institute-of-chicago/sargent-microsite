@@ -3,13 +3,13 @@ extends: "_partials.call_to_action"
 weight: 1300
 section: "content"
 title: "Come explore Sargent for yourself."
+subtitle: "Learn more about how to plan your visit"
+subtitleLink: "http://www.artic.edu/visit"
 buttonOne: "Become a member"
 buttonOneLink: "https://sales.artic.edu/memberships"
 buttonTwo: "Buy tickets"
 buttonTwoLink: "https://sales.artic.edu/admissiondate"
-dates: "JULY 1–SEPT 30"
-buttonThree: "Plan your visit"
-buttonThreeLink: "http://www.artic.edu/visit"
+dates: "July 1 – September 30"
 ---
 
 Member Previews: June 28–30

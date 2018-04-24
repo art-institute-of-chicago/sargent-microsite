@@ -44,11 +44,14 @@ section.call-to-action {
 		font-size: 1em;
 		width: 75%;
 
+		margin-bottom: 1.5em;
+
 		a {
 			display: inline-block;
 			border-bottom: 0.15em solid white;
-			padding-bottom: 0.5em;
+			padding-bottom: 0.25em;
 		}
+
 	}
 
 	// Buttons! See also main.scss
@@ -75,8 +78,10 @@ section.call-to-action {
 	// Exhibition dates
 	h3 {
 		font-family: 'Didact Gothic', sans-serif;
-		text-transform: uppercase;
 		letter-spacing: em(1.1);
+
+		color: white;
+		font-style: italic;
 
 		font-size: 1.5em;
 		margin-bottom: 1em;

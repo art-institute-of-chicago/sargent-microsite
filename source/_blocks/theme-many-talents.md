@@ -5,7 +5,7 @@ title: "An Artist of Many Talents"
 background: "#BFD2C1"
 images:
   - image: "IM022017-int_press.jpg"
-    lightbox: "DesignFan"
+    lightbox: "vizcaya"
     alt: "Lorem ipsum."
 ---
 

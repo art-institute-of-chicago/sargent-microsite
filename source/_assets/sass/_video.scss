@@ -13,6 +13,14 @@ section.video {
 		width: 100%;
 	}
 	.video-js {
+
+		background-color: transparent;
+		overflow: hidden;
+
+		&.vjs-has-started > div > iframe {
+			margin-left: -2px;
+		}
+
 		position: relative;
 		width: 100%;
 		z-index: 0;
@@ -20,7 +28,7 @@ section.video {
 
 	.vjs-big-play-centered .vjs-big-play-button {
 
-		background-image: url('../images/play.png');
+		background-image: none;
 		background-position: center center;
 		background-size: cover;
 
@@ -45,17 +53,21 @@ section.video {
 		}
 	}
 
-	.video-js:hover .vjs-big-play-button {
-		background-color: rgba(0,0,0,.3);
-	}
-
-	.vjs-icon-play:before,
-	.video-js .vjs-big-play-button:before,
-	.video-js .vjs-play-control:before {
+	// .vjs-icon-play:before,
+	// .video-js .vjs-play-control:before,
+	.video-js .vjs-big-play-button:before {
 		content: "";
 	}
 
-	.video-js .vjs-time-control {
-		line-height: 3em;
+	.video-js .vjs-remaining-time-display {
+		margin-top: 0.6em;
+	}
+
+	.vjs-slider-horizontal .vjs-volume-level:before {
+		top: -0.5em;
+	}
+
+	.video-js .vjs-play-progress:before {
+		top: -0.5em;
 	}
 }

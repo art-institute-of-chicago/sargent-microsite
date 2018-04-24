@@ -1,9 +1,9 @@
 footer {
 
-	background-color: #000000;
+	background-color: #231D1B;
 	color: white;
 
-	padding: 50px 0;
+	padding-top: 50px;
 
 	font-size: 0.8em;
 
@@ -11,19 +11,137 @@ footer {
 		padding-bottom: 1.5em;
 	}
 
+	// Sponsor icons are not links!
 	img {
-		margin-top: 1em;
+		margin-right: 1em;
 	}
 
-	.text {
-		columns: 1;
-		margin-bottom: 2em;
+	img:last-of-type {
+		margin-right: 0;
 	}
+
+	.row, .col {
+
+		display: flex;
+		flex-wrap: wrap;
+
+		justify-content: space-between;
+		align-items: flex-start;
+
+	}
+
+	.col {
+
+		flex-direction: column;
+
+		margin: 0 -0.75em;
+
+		// For mobile only
+		margin-bottom: 3em;
+
+		// Spacing stuff...
+		> div {
+
+			align-self: stretch;
+
+			padding: 0 0.75em;
+			overflow: hidden;
+
+			span, div, h3 {
+				// white-space: nowrap;
+				padding: 0.75em 0;
+			}
+
+			h5 {
+				padding: 0.75em 0;
+				// flex-basis: 100%;
+			}
+
+		}
+
+	}
+
+	.organized {
+
+		flex-basis: 100%;
+
+		white-space: nowrap;
+
+		.chase {
+			padding-bottom: 4px;
+		}
+
+	}
+
+
+	.links {
+
+		align-items: center;
+
+		flex-basis: 100%;
+
+		div {
+
+			// Normal padding + half of img.aic height - half of our height
+			padding: calc(0.75em + #{45px / 2} - #{1em / 2}) 0;
+
+			// Social media icons
+			a {
+				display: inline-block;
+				font-size: 2em;
+				line-height: 1;
+				height: 1em;
+
+				vertical-align: middle;
+
+				img {
+					opacity: 1;
+					height: 100%;
+					margin: 0 0.25em;
+				}
+
+				&:first-of-type img {
+					margin-left: 0;
+				}
+
+				&:last-of-type img {
+					margin-right: 0;
+				}
+
+			}
+		}
+
+	}
+
+	.sponsor {
+		flex-basis: 100%;
+
+		img {
+			max-width: 100%;
+			margin-bottom: 13px;
+		}
+	}
+
 
 	@media #{$mq-small} {
-		.text {
-			columns: 2;
+
+		padding-bottom: 50px;
+
+		.row:first-of-type {
+
+			margin-bottom: 2em;
+
 		}
+
+		.col {
+			width: 50%;
+			margin-bottom: 0;
+		}
+
+		.row-reverse-desktop {
+			flex-direction: row-reverse;
+		}
+
 	}
 
 }

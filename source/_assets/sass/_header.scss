@@ -163,9 +163,9 @@ header {
 		flex-grow: 1;
 
 		span.dates {
-			font-family: 'GaramondMTPro-Italic', sans-serif;
+			font-family: 'GaramondMTPro-Italic', serif;
+			font-style: italic;
 
-			text-transform: uppercase;
 			letter-spacing: em(0.76);
 
 			font-size: 0.8em;

@@ -73,6 +73,7 @@ section.related {
 			font-size: $font-min;
 			line-height: 1.25;
 			color: $color-text;
+			letter-spacing: 0.08em;
 
 			text-transform: uppercase;
 
@@ -132,10 +133,10 @@ section.related {
 			font-weight: bold;
 			color: #ffffff;
 
-			font-size: 0.66em;
+			font-size: 0.75em;
 			height: 3em;
 			line-height: 1.5;
-			letter-spacing: 0.3em;
+			letter-spacing: 0.25em;
 			text-transform: uppercase;
 		}
 	}

@@ -1,6 +1,6 @@
 ---
 extends: "_partials.quote"
-weight: 1000
+weight: 400
 image: "images/content/wild-asters_press.jpg"
 attribution: "John Singer Sargent"
 ---

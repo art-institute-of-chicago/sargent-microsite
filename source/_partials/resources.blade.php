@@ -3,7 +3,7 @@
 	<div class="container">
 
 		<div class="title">
-			<h2>Resources</h2>
+            <h2>Enhance your visit</h2>
 		</div>
 
 		<div class="wrapper">

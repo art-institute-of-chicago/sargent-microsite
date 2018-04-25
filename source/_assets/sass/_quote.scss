@@ -51,7 +51,7 @@ section.quote {
 		$font-min: 1.2em;
 		$font-max: 2.4em;
 
-		$pad-min: 1em;
+		$pad-min: 2.5em;
 		$pad-max: 2.5em;
 
 		font-size: $font-min;
@@ -90,9 +90,9 @@ section.quote {
 		h4.attribution {
 
 			text-transform: uppercase;
-			margin-top: 1.5em;
 
 			font-weight: light;
+		    margin-top: 2em;
 
 			font-size: 0.75em;
 

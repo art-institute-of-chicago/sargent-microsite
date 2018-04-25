@@ -1,25 +1,27 @@
 <section class="related resources" role="landmark">
     <a class="anchor" id="{{ $page->getFilename() }}"></a>
-	<div class="container">
+    <div class="container">
 
-		<div class="title">
+        <div class="title">
             <h2>Enhance your visit</h2>
-		</div>
 
-		<div class="wrapper">
+            <p><a href="{{ $page->link }}" target="_blank" class="btn-small">Learn more</a></p>
+        </div>
 
-			@foreach ($resources as $resource)
+        <div class="wrapper">
 
-				<?php $section = $resource->section ?: 'content'; ?>
+            @foreach ($resources as $resource)
 
-				@include( $resource->extends, [
-					'page' => $page->merge($resource),
-					$section => $resource->getContent()
-				])
+                <?php $section = $resource->section ?: 'content'; ?>
 
-			@endforeach
+                @include( $resource->extends, [
+                    'page' => $page->merge($resource),
+                    $section => $resource->getContent()
+                ])
 
-		</div>
+            @endforeach
 
-	</div>
+        </div>
+
+    </div>
 </section>

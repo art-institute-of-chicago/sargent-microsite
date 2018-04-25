@@ -2,10 +2,13 @@ section.resources {
 
 	background-color: #A47464;
 
-		.resource {
+	.resource {
+
+		h5 {
+		    margin-bottom: 0;
+		}
 
 		@include related-item( 1, 2, 2, 3, 3, 3 );
-
 
 	}
 

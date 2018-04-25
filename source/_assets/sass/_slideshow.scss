@@ -60,7 +60,7 @@ section.slideshow {
 	}
 
 	.title-card {
-		background-color: #D1E5D9;
+		background-color: #AF574B;
 
 		// Balance out .swiper-pagination
 		// Pagination is positioned in pixels, not em's
@@ -73,7 +73,7 @@ section.slideshow {
 		// padding-right changes w/ screen-size
 		padding-top: 1.125em;
 		padding-bottom: 1.125em;
-		padding-left: 1.65em;
+		padding-left: 2em;
 
 		// values are between()'d $bp-smallest and $bp-medium
 		$width-min: 18em;
@@ -82,18 +82,18 @@ section.slideshow {
 		$pad-min: 2em;
 		$pad-max: 5em;
 
-		$logo-min: 3em;
-		$logo-max: 3.5em;
+		$logo-min: 3.5em;
+		$logo-max: 5em;
 
-		$logo-pad-min: 1em;
-		$logo-pad-max: 1.125em;
+		$logo-pad-min: 0em;
+		$logo-pad-max: 2em;
 
 		width: $width-min;
 		padding-right: $pad-min;
 
 		img {
 			height: $logo-min;
-			margin-bottom: $logo-pad-min;
+			margin: $logo-pad-min 0;
 		}
 
 		@media #{$mq-smallest} {
@@ -103,7 +103,7 @@ section.slideshow {
 
 			img {
 				height: between($logo-min, $logo-max, $bp-smallest, $bp-medium);
-				margin-bottom: between($logo-pad-min, $logo-pad-max, $bp-smallest, $bp-medium);
+				margin: between($logo-pad-min, $logo-pad-max, $bp-smallest, $bp-medium) 0;
 			}
 
 		}
@@ -116,74 +116,7 @@ section.slideshow {
 
 			img {
 				height: $logo-max;
-				margin-bottom: $logo-pad-max;
-			}
-
-		}
-
-		.events {
-
-			display: flex;
-			flex-wrap: nowrap;
-			align-items: center;
-			justify-content: space-between;
-
-			.event {
-
-				$font-title-min: 0.8em;
-				$font-title-max: 1em;
-
-				$font-date-min: 0.7em;
-				$font-date-max: 0.9em;
-
-				span {
-					display: block;
-				}
-
-				.title {
-
-					font-family: 'GaramondMTPro-Italic', serif;
-					font-style: italic;
-
-					font-size: $font-title-min;
-
-				}
-
-				.date {
-
-					font-family: 'GaramondMTPro-Regular', serif;
-
-					text-transform: uppercase;
-					letter-spacing: em(1.1);
-
-					font-size: $font-date-min;
-
-				}
-
-				@media #{$mq-smallest} {
-
-					.title {
-						font-size: between($font-title-min, $font-title-max, $bp-smallest, $bp-medium);
-					}
-
-					.date {
-						font-size: between($font-date-min, $font-date-max, $bp-smallest, $bp-medium);
-					}
-
-				}
-
-				@media #{$mq-medium} {
-
-					.title {
-						font-size: $font-title-max;
-					}
-
-					.date {
-						font-size: $font-date-max;
-					}
-
-				}
-
+				margin: $logo-pad-max 0;
 			}
 
 		}

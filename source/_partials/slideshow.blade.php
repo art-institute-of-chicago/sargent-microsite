@@ -32,16 +32,7 @@
 
 	<div class="title-card">
 
-		<img src="images/gauguin-logo.svg" alt="Gauguin, Artist as Alchemist"/>
-
-		<div class="events">
-
-			<div class="event event-exhibit">
-				<span class="title">Exhibition</span>
-				<span class="date">June 25 • Sept 10</span>
-			</div>
-
-		</div>
+		<img src="images/sargent-lockup.png" alt="John Singer Sargent & Chicago's Gilded Age; July 1 – September 30"/>
 
 	</div>
 

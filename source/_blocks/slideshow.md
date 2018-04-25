@@ -6,5 +6,9 @@ weight: 50
 # images/content/slideshow-mobile-{image}.jpg
 # images/content/slideshow-desktop-{image}.jpg
 images:
-  - "woman"
+  - "carmencita"
+  - "swinton"
+  - "easel"
+  - "whistler"
+  - "boy"
 ---

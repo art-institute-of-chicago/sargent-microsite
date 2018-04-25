@@ -113,6 +113,7 @@ section.theme {
 		p {
 			@include font-copy();
 			letter-spacing: 0.04em;
+			line-height: 1.7;
 			margin-bottom: $theme-gutter;
 		}
 

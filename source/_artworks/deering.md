@@ -1,7 +1,7 @@
 ---
 id: "deering"
 link: ""
-image: "images/dzis/IM027378-int_press.dzi"
+image: "images/dzis/IM027378-int_print.dzi"
 artistName: John Singer Sargent
 artistPlaceDates: "American, 1856-1925"
 title: "Portrait of Charles Deering"

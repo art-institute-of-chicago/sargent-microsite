@@ -1,7 +1,7 @@
 ---
 id: "vizcaya"
 link: ""
-image: "images/dzis/IM022017-int_press.dzi"
+image: "images/dzis/IM022017-int_print.dzi"
 artistName: John Singer Sargent
 artistPlaceDates: "American, 1856-1925"
 title: "The Loggia, Vizcaya"

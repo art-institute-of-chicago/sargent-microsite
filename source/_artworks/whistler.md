@@ -1,7 +1,7 @@
 ---
 id: "whistler"
 link: ""
-image: "images/dzis/portrait-of-whistler_press.dzi"
+image: "images/dzis/portrait-of-whistler_print.dzi"
 artistName: Giovanni Boldini
 artistPlaceDates: "Italian, 1842-1931"
 title: "Portrait of James McNeill Whistler"

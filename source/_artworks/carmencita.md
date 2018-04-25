@@ -1,7 +1,7 @@
 ---
 id: "carmencita"
 link: ""
-image: "images/dzis/la-carmencita-NEW_press.dzi"
+image: "images/dzis/la-carmencita-NEW_print.dzi"
 artistName: John Singer Sargent
 artistPlaceDates: "American, 1856-1925"
 title: "La Carmencita"

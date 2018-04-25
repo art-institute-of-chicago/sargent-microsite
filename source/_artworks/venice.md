@@ -1,7 +1,7 @@
 ---
 id: "venice"
 link: ""
-image: "images/dzis/street-in-venice_press.dzi"
+image: "images/dzis/street-in-venice_print.dzi"
 artistName: John Singer Sargent
 artistPlaceDates: "American, 1856-1925"
 title: "Street in Venice"

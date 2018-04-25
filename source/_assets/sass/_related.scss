@@ -6,9 +6,13 @@
 @mixin related-item( $n-smallest, $n-smaller, $n-small, $n-smallish, $n-medium, $n-large ) {
 
 	padding: $mg-smallest;
+	margin-top: $mg-smallest;
+	margin-bottom: $mg-smallest;
 
 	@media #{$mq-medium} {
 		padding: 1em;
+		margin-top: 1em;
+		margin-bottom: 1em;
 	}
 
 	width: percentage(1/$n-smallest);;
@@ -40,10 +44,10 @@ section.related {
 
 	position: relative;
 
-	padding-bottom: 2em;
+	padding-bottom: 4em;
 
 	@media #{$mq-medium} {
-		padding-top: 2em;
+		padding-top: 4em;
 	}
 
 	.container {
@@ -65,8 +69,8 @@ section.related {
 
 		padding-bottom: 0.5em;
 
-		$font-min: 2.125em;
-		$font-max: 2.3em;
+		$font-min: 1.72em;
+		$font-max: 1.72em;
 
 		h2 {
 			font-family: 'BrandonGrotesqueWeb-Bold', sans-serif;
@@ -138,6 +142,7 @@ section.related {
 			line-height: 1.5;
 			letter-spacing: 0.25em;
 			text-transform: uppercase;
+			margin-bottom: 2em;
 		}
 	}
 }

@@ -72,23 +72,23 @@ section.theme {
 			position: relative;
 
 			&:after {
-				$size: 1.9em;
+				$size: 3.0em;
 
-				font-size: 1.2em;
+				font-size: 0.75em;
 				content: '+';
 				line-height: $size - 0.1;
 
 				position: absolute;
-				bottom: -$size/8;
-				right: -$size/8;
+				bottom: 0; /* -$size/8; */
+				right: 0; /* -$size/8; */
 
 				width: $size;
 				height: $size;
 
 				background: $color-orange;
 
+				font-family: 'GaramondMTPro-Bold', sans-serif;
 				font-weight: bold;
-				font-family: 'GaramondMTPro-Regular', sans-serif;
 			}
 
 		}

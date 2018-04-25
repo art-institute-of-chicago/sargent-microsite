@@ -4,7 +4,7 @@ section.shop {
 
 	.shop-item {
 
-		@include related-item( 2, 2, 3, 4, 3, 4 );
+		@include related-item( 2, 2, 3, 3, 3, 3 );
 
 		a {
 
@@ -23,16 +23,17 @@ section.shop {
 				background-size: contain;
 				background-repeat: no-repeat;
 
-				margin-bottom: 0.5em;
+				margin-bottom: 1.5em;
 
 			}
 
 			.item-title {
 				font-family: 'GaramondMTPro-Regular', serif;
 				font-size: 0.85em; // ~10px
+				margin-bottom: 1em;
 
 				@media #{$mq-medium} {
-					font-size: 1em;
+					font-size: 1.1em;
 				}
 
 			}
@@ -44,7 +45,7 @@ section.shop {
 			font-weight: bold;
 			color: white;
 
-			font-size: 0.65em;
+			font-size: em(14);
 			line-height: 3;
 
 			letter-spacing: em(1.59);

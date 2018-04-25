@@ -32,7 +32,7 @@
 
 	<div class="title-card">
 
-		<img src="images/sargent-lockup.png" alt="John Singer Sargent & Chicago's Gilded Age; July 1 – September 30"/>
+		<img src="images/sargent-lockup.svg" alt="John Singer Sargent & Chicago's Gilded Age; July 1 – September 30"/>
 
 	</div>
 

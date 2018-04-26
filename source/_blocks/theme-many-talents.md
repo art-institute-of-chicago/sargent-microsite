@@ -6,7 +6,7 @@ background: "#BFD2C1"
 images:
   - image: "IM022017-int_press.jpg"
     lightbox: "vizcaya"
-    alt: "Lorem ipsum."
+    alt: "A painting of a large, open room with many architectural details. Four large, white pillars lead the viewer through an exterior coordidor with high, domed ceilings to a doorway that seems to lead to the interior of the home. Large, lush plants can be seen in the sun-filled patio just out of view."
 ---
 
-While still best known for his remarkable portraits, Sargent pursued a wide range of genres and mediums throughout his career. After his retirement from portraiture in 1907, he continued to enjoy broad success—with his fellow artists, patrons, and the public—as he continued to create landscapes, watercolors, and murals. 
+While still best known for his remarkable portraits, Sargent pursued a wide range of genres and mediums throughout his career. After his retirement from portraiture in 1907, he continued to enjoy broad success—with his fellow artists, patrons, and the public—as he continued to create landscapes, watercolors, and murals.

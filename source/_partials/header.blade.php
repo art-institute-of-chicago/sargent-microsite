@@ -29,8 +29,8 @@
         <div class="header-right">
 
             <span class="buttons" role="menu">
-                <a class="btn btn-small btn-alt btn-member" href="https://sales.artic.edu/memberships" target="_blank" role="menuitem">Become a Member</a>
-                <a class="btn btn-small btn-ticket" href="https://sales.artic.edu/admissiondate" target="_blank" role="menuitem"><span class="verb">Buy </span>Tickets</a>
+                <a class="btn btn-header btn-alt btn-member" href="https://sales.artic.edu/memberships" target="_blank" role="menuitem">Become a Member</a>
+                <a class="btn btn-header btn-ticket" href="https://sales.artic.edu/admissiondate" target="_blank" role="menuitem"><span class="verb">Buy </span>Tickets</a>
             </span>
 
         </div>

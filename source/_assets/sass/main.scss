@@ -161,22 +161,26 @@ section.call-to-action ul li a {
 	}
 
 	// Header & related buttons
-	&.btn-related {
+	&.btn-related, &.btn-header {
 
-		font-size: 0.9em;
+		padding: 0.9em 1.5em 0.6em;
 
 	}
 
-	&.btn-small {
+	&.btn-related {
 
-		font-size: 0.6em;
-		padding: 0.9em 1.5em 0.6em;
+		font-size: 0.8em;
 
 		@media #{$mq-medium} {
 
-		    font-size: 0.7em;
+			font-size: 0.7em;
 		}
 
+	}
+
+	&.btn-header {
+
+		font-size: 0.6em;
 	}
 
 	// Call-to-action buttons
@@ -226,10 +230,10 @@ section.shop {
 
 // Offset anchor links to account for sticky header
 a.anchor {
-    display: block;
-    position: relative;
-    top: -75px;
-    visibility: hidden;
+	display: block;
+	position: relative;
+	top: -75px;
+	visibility: hidden;
 }
 
 // Import the block sections

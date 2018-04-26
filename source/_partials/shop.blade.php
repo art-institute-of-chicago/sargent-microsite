@@ -5,7 +5,7 @@
 		<div class="title">
 			<h2>Shop</h2>
 
-			<p><a href="{{ $page->link }}" target="_blank" class="btn-small">See all products</a></p>
+			<p><a href="{{ $page->link }}" target="_blank" class="btn-related">See all products</a></p>
 		</div>
 
 		<div class="wrapper">

@@ -29,7 +29,7 @@ section.shop {
 
 			.item-title {
 				font-family: 'GaramondMTPro', serif;
-				font-size: 0.85em; // ~10px
+				font-size: 1.5em; // ~10px
 				margin-bottom: 1em;
 
 				@media #{$mq-medium} {
@@ -45,10 +45,14 @@ section.shop {
 			font-weight: bold;
 			color: white;
 
-			font-size: em(14);
+			font-size: em(19);
 			line-height: 3;
 
 			letter-spacing: em(1.59);
+
+			@media #{$mq-medium} {
+			    font-size: em(14);
+			}
 
 		}
 	}

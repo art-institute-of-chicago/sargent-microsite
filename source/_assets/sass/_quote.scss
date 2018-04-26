@@ -8,7 +8,7 @@ section.quote {
 	.container {
 
 		// TODO: Change to em's for font-resize...
-		@include container-absolute( 120%, 75% );
+		@include container-absolute( 100%, 75% );
 
 		// A necessary override...
 		@media #{$mq-small} {

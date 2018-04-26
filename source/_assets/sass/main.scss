@@ -111,7 +111,7 @@ section {
 
 		// Try to interpolate between the minimum and maximum padding...
 		// Our breakpoints are in em's, so $pad-min and $pad-max must be em's too
-		@if is-em($pad-min) && is-em($pad-max) {
+		@if is-em($pad-min) and is-em($pad-max) {
 
 			@media #{$mq-smallest} {
 				padding-bottom: between($pad-min, $pad-max, $bp-smallest, $bp-medium);

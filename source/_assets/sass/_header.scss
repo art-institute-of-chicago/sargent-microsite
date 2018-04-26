@@ -199,8 +199,8 @@ header {
 			margin-right: 0.5em;
 		}
 
-		.btn-ticket .verb {
-			@include break-ticket {
+		.btn-ticket {
+			@include break-member {
 				display: none;
 			}
 			margin-right: 0em;

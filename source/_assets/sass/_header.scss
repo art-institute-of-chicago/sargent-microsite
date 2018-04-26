@@ -73,7 +73,7 @@ header {
 		justify-content: space-between;
 
 		// Applies to self and immediate child divs
-		&, > div {
+		&, > div, .header-stack {
 			display: flex;
 			flex-wrap: nowrap;
 			align-items: center;
@@ -121,76 +121,81 @@ header {
 
 		}
 
-		.exhibit {
+		.header-stack {
 
-			color: #fff;
+			.exhibit {
 
-			padding: 0 0.5em;
+				color: #fff;
 
-			@include break-margins {
-				padding-right: 20px;
+				padding: 0 0.5em;
+
+				@include break-margins {
+					padding-right: 20px;
+				}
+
+				span {
+					display: inline-block;
+				}
+
+				span.title {
+					font-family: 'BrandonGrotesqueWeb', sans-serif;
+					font-weight: bold;
+
+					text-transform: uppercase;
+					letter-spacing: 0.1em;
+
+					// font-size: 1.2em;
+
+					margin-top: 0.7em;
+				}
+
 			}
 
-			span {
-				display: inline-block;
+			.dates {
+				font-family: 'GaramondMTPro', serif;
+				font-style: italic;
+
+				letter-spacing: em(0.76);
+
+				// font-size: 1.4em;
+
+				margin-top: 0.4em;
+
+				color: #fff;
+
 			}
 
-			span.title {
-				font-family: 'BrandonGrotesqueWeb', sans-serif;
-				font-weight: bold;
-
-				text-transform: uppercase;
-				letter-spacing: 0.1em;
-
-				// font-size: 1.2em;
-
-				margin-top: 0.7em;
+			@media #{$mq-small} {
+				.exhibit {
+					padding: 0 1em;
+				}
 			}
-
-		}
-
-		span.dates {
-			font-family: 'GaramondMTPro', serif;
-			font-style: italic;
-
-			letter-spacing: em(0.76);
-
-			// font-size: 1.4em;
-
-			margin-top: 0.4em;
-
-			color: #fff;
 
 			@include break-dates {
 
-				text-align: center;
+				flex-direction: column;
+				align-items: flex-start;
 
-				.start, .end {
+				margin-left: 1em;
+
+				.exhibit, .dates {
 					display: block;
+					padding: 0;
+					margin: 0;
 				}
 
-				.dash {
-					display: none;
+				.exhibit span.title {
+					margin-top: 0.3em;
 				}
 
 			}
 
-		}
-
-		@media #{$mq-small} {
-			.exhibit {
-				padding: 0 1em;
-			}
 		}
 
 
 	}
 
 	.header-right {
-
-		justify-content: space-between;
-
-		flex-grow: 1;
 
 		.btn-member {
 			@include break-member {

@@ -161,9 +161,15 @@ section.call-to-action ul li a {
 	}
 
 	// Header & related buttons
-	&.btn-small {
+	&.btn-related {
 
 		font-size: 0.9em;
+
+	}
+
+	&.btn-small {
+
+		font-size: 0.6em;
 		padding: 0.9em 1.5em 0.6em;
 
 		@media #{$mq-medium} {

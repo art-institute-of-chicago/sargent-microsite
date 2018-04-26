@@ -10,15 +10,19 @@
                 <img src="images/aic.svg" alt="Art Institute of Chicago">
             </a>
 
-            <span class="exhibit">
-                <span class="title">John Singer Sargent</span>
-            </span>
+            <div class="header-stack">
 
-            <span class="dates">
-                <span class="start">{{ $page->dates['start'] }}</span
-                ><span class="dash"> – </span
-                ><span class="end">{{ $page->dates['end'] }}</span>
-            </span>
+                <span class="exhibit">
+                    <span class="title">John Singer Sargent</span>
+                </span>
+
+                <span class="dates">
+                    <span class="start">{{ $page->dates['start'] }}</span
+                    ><span class="dash"> – </span
+                    ><span class="end">{{ $page->dates['end'] }}</span>
+                </span>
+
+            </div>
 
         </div>
 

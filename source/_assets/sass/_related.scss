@@ -67,9 +67,10 @@ section.related {
 		justify-content: space-between;
 		align-items: center;
 
-		padding-bottom: 0.5em;
+		padding-top: 1.5em;
+		padding-bottom: 1em;
 
-		$font-min: 1.72em;
+		$font-min: 1.4em;
 		$font-max: 1.72em;
 
 		h2 {
@@ -95,8 +96,10 @@ section.related {
 
 		}
 
-
 		@media #{$mq-medium} {
+
+			padding-top: 0em;
+			padding-bottom: 0.5em;
 
 			display: block;
 			flex-wrap: wrap;

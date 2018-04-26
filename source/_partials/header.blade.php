@@ -33,6 +33,10 @@
                 <a class="btn btn-header btn-ticket" href="https://sales.artic.edu/admissiondate" target="_blank" role="menuitem"><span class="verb">Buy </span>Tickets</a>
             </span>
 
+            <a class="btn-sticky btn-ticket" href="https://sales.artic.edu/admissiondate" target="_blank" role="menuitem">
+                <img src="images/ticket.svg" alt="Buy Tickets"/>
+            </a>
+
         </div>
 
     </div>

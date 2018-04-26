@@ -89,6 +89,21 @@ section.theme {
 
 				font-family: 'GaramondMTPro', sans-serif;
 				font-weight: bold;
+
+				padding-top: 0.2em;
+
+				$font-min: 1.1em;
+				$font-max: 0.75em;
+
+				font-size: $font-min;
+
+				@media #{$mq-smallest} {
+				    font-size: between( $font-min, $font-max, $bp-smallest, $bp-small );
+				}
+
+				@media #{$mq-small} {
+				    font-size: $font-max;
+				}
 			}
 
 		}

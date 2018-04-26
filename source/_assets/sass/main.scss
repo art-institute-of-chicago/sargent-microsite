@@ -154,10 +154,6 @@ section.call-to-action ul li a {
 	// Creates consistent height w/ .btn-alt
 	border: 3px solid $color-orange;
 
-	// Non-header buttons
-	font-size: 0.7em;
-	padding: 0.7em 1.5em;
-
 	* {
 		line-height: 1;
 	}
@@ -166,14 +162,21 @@ section.call-to-action ul li a {
 		margin-left: 10px;
 	}
 
+	// Header & related buttons
 	&.btn-small {
+
+		font-size: 0.7em;
+		padding: 0.5em 1.5em 0.3em;
+
+	}
+
+	// Call-to-action buttons
+	&.btn-large {
 
 		font-size: 0.8em;
 
 		letter-spacing: 0.1em;
 		padding: 18px 38px 10px;
-
-		background-color: $color-orange;
 
 	}
 

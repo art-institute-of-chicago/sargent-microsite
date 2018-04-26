@@ -14,15 +14,15 @@
                 <span class="title">John Singer Sargent</span>
             </span>
 
-        </div>
-
-        <div class="header-right">
-
             <span class="dates">
                 <span class="start">{{ $page->dates['start'] }}</span
                 ><span class="dash"> – </span
                 ><span class="end">{{ $page->dates['end'] }}</span>
             </span>
+
+        </div>
+
+        <div class="header-right">
 
             <span class="buttons" role="menu">
                 <a class="btn btn-small btn-alt btn-member" href="https://sales.artic.edu/memberships" target="_blank" role="menuitem">Become a Member</a>

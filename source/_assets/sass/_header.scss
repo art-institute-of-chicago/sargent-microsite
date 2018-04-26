@@ -137,32 +137,17 @@ header {
 
 			span.title {
 				font-family: 'BrandonGrotesqueWeb-Bold', sans-serif;
-				font-weight: bold;
+				// font-weight: bold;
 
 				text-transform: uppercase;
 				letter-spacing: 0.1em;
 
-				font-size: 1.2em;
+				// font-size: 1.2em;
 
 				margin-top: 0.7em;
 			}
 
 		}
-
-		@media #{$mq-small} {
-			.exhibit {
-				padding: 0 1em;
-			}
-		}
-
-
-	}
-
-	.header-right {
-
-		justify-content: space-between;
-
-		flex-grow: 1;
 
 		span.dates {
 			font-family: 'GaramondMTPro-Italic', serif;
@@ -170,7 +155,7 @@ header {
 
 			letter-spacing: em(0.76);
 
-			font-size: 1.4em;
+			// font-size: 1.4em;
 
 			margin-top: 0.4em;
 
@@ -192,17 +177,33 @@ header {
 
 		}
 
+		@media #{$mq-small} {
+			.exhibit {
+				padding: 0 1em;
+			}
+		}
+
+
+	}
+
+	.header-right {
+
+		justify-content: space-between;
+
+		flex-grow: 1;
+
 		.btn-member {
 			@include break-member {
 				display: none;
 			}
-			margin-right: 1em;
+			margin-right: 0.5em;
 		}
 
 		.btn-ticket .verb {
 			@include break-ticket {
 				display: none;
 			}
+			margin-right: 0em;
 		}
 
 	}
@@ -218,7 +219,7 @@ header {
 		letter-spacing: em(0.04);
 		color: $color-green;
 
-		padding: 0.4em;
+		padding: 0.4em 0.4em 0.3em;
 		width: 100%;
 		z-index: 2;
 

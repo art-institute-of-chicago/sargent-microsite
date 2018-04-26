@@ -6,8 +6,24 @@ section.quote {
 	overflow: hidden;
 
 	.container {
+
 		// TODO: Change to em's for font-resize...
-		@include container-absolute( 83%, 75% );
+		@include container-absolute( 120%, 75% );
+
+		// A necessary override...
+		@media #{$mq-small} {
+			padding-bottom: 90%;
+		}
+
+		// The following two just recreate effects of container-absolute(120%, 75%)
+		@media #{$mq-medium} {
+			padding-bottom: 57%;
+		}
+
+		@media #{$mq-large} {
+			padding-bottom: 48%;
+		}
+
 	}
 
 	// Some browsers bug out when you mix flex + absolute
@@ -89,16 +105,22 @@ section.quote {
 
 		h4.attribution {
 
-		    font-family: 'BrandonGrotesqueWeb', sans-serif;
+			font-family: 'BrandonGrotesqueWeb', sans-serif;
 
-		    text-transform: uppercase;
-		    margin-top: 2em;
+			text-transform: uppercase;
 
-		    font-size: 0.75em;
+			font-size: 0.75em;
 
-		    &:before {
+			// Affected by media queries
+			margin-top: 1em;
+
+			@media #{$mq-small} {
+				margin-top: 2em;
+			}
+
+			&:before {
 				content: "—";
-		    }
+			}
 
 		}
 

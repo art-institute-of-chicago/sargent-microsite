@@ -73,7 +73,10 @@ section.related {
 		$font-max: 1.72em;
 
 		h2 {
-			font-family: 'BrandonGrotesqueWeb-Bold', sans-serif;
+
+			font-family: 'BrandonGrotesqueWeb', sans-serif;
+			font-weight: bold;
+
 			font-size: $font-min;
 			line-height: 1.25;
 			color: $color-text;
@@ -127,13 +130,13 @@ section.related {
 
 	.item {
 		h4 {
-			font-family: 'GaramondMTPro-Regular', serif;
+			font-family: 'GaramondMTPro', serif;
 			font-size: 1.2em;
 			margin-bottom: 1.25em;
 		}
 
 		h5 {
-			font-family: 'BrandonGrotesqueWeb-Bold', sans-serif;
+			font-family: 'BrandonGrotesqueWeb', sans-serif;
 			font-weight: bold;
 			color: #ffffff;
 

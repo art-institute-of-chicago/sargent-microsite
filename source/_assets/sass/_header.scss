@@ -136,8 +136,8 @@ header {
 			}
 
 			span.title {
-				font-family: 'BrandonGrotesqueWeb-Bold', sans-serif;
-				// font-weight: bold;
+				font-family: 'BrandonGrotesqueWeb', sans-serif;
+				font-weight: bold;
 
 				text-transform: uppercase;
 				letter-spacing: 0.1em;
@@ -150,7 +150,7 @@ header {
 		}
 
 		span.dates {
-			font-family: 'GaramondMTPro-Italic', serif;
+			font-family: 'GaramondMTPro', serif;
 			font-style: italic;
 
 			letter-spacing: em(0.76);
@@ -213,8 +213,9 @@ header {
 		background-color: $color-orange;
 		text-align: center;
 
-		font-family: 'BrandonGrotesqueWeb-Bold', sans-serif;
+		font-family: 'BrandonGrotesqueWeb', sans-serif;
 		font-weight: bold;
+
 		text-transform: uppercase;
 		letter-spacing: em(0.04);
 		color: $color-green;

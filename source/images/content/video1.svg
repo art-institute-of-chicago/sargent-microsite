@@ -1,7 +1,7 @@
 <svg width="1024px" height="558px" viewBox="0 0 1024 558" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F7E3D7">
     <style>
         .italic {
-            font-family: Garamond-Italic, Garamond;
+            font-family: 'GaramondMTPro', Garamond, serif;
             font-style: italic;
         }
     </style>

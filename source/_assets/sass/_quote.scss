@@ -89,17 +89,15 @@ section.quote {
 
 		h4.attribution {
 
-		    font-family: 'BrandonGrotesqueWeb-Regular', sans-serif;
+		    font-family: 'BrandonGrotesqueWeb', sans-serif;
 
 		    text-transform: uppercase;
 		    margin-top: 2em;
 
-		    font-weight: light;
-
 		    font-size: 0.75em;
 
 		    &:before {
-			content: "—";
+				content: "—";
 		    }
 
 		}

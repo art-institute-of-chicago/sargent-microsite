@@ -47,7 +47,7 @@ $lightbox-border: 1em;
 // Fonts - calibrated to theme blocks
 // heading is 1.4 of copy @ 320, 1.5555 @ 1024
 @mixin font-heading() {
-	font-family: BrandonGrotesqueWeb-Regular, sans-serif;
+	font-family: 'BrandonGrotesqueWeb', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 1.4em;
@@ -62,13 +62,13 @@ $lightbox-border: 1em;
 }
 
 @mixin font-accent() {
-	font-family: 'BrandonGrotesqueWeb-Bold', sans-serif;
+	font-family: 'BrandonGrotesqueWeb', sans-serif;
 	font-weight: bold;
 	font-size: (16/18) * 1em;
 }
 
 @mixin font-copy() {
-	font-family: 'GaramondMTPro-Regular', serif;
+	font-family: 'GaramondMTPro', serif;
 	font-weight: normal;
 	font-size: 1em;
 

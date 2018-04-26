@@ -34,7 +34,7 @@
 
 		</div>
 
-		<div class="row row-reverse-desktop">
+		<div class="row row-reverse">
 
 			<div class="col">
 

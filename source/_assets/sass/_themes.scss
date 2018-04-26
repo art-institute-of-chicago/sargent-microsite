@@ -161,13 +161,23 @@ section.theme-1.theme-portrait {
 
 	@include theme-background(#DAEFE3);
 
-	@media #{$mq-smaller} {
+	@media #{$mq-small} {
 
 		@include reset-mobile-constraints();
 
 		.wrapper {
 			flex-direction: row;
 		}
+
+		.image {
+			padding-left: $theme-gutter/2;
+			padding-right: $theme-gutter*1.5;
+		}
+
+	}
+
+
+	@media #{$mq-medium} {
 
 		.image {
 			padding-left: $theme-gutter/2;

@@ -1,6 +1,6 @@
 ---
 id: "vizcaya"
-link: ""
+link: "http://www.artic.edu/aic/collections/artwork/145903"
 image: "images/dzis/IM022017-int_print.dzi"
 artistName: John Singer Sargent
 artistPlaceDates: "American, 1856-1925"

@@ -198,17 +198,25 @@ header {
 	.header-right {
 
 		.btn-member {
+
+			margin-right: 0.5em;
+
 			@include break-member {
 				display: none;
 			}
-			margin-right: 0.5em;
+
 		}
 
 		.btn-ticket {
-			@include break-member {
-				display: none;
-			}
+
 			margin-right: 0em;
+
+			@include break-ticket {
+				.verb {
+					display: none;
+				}
+			}
+
 		}
 
 	}

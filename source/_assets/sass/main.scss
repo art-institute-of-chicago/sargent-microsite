@@ -180,7 +180,16 @@ section.call-to-action ul li a {
 
 	&.btn-header {
 
-		font-size: 0.6em;
+		font-size: 0.9em;
+		padding: 0.5em 1em 0.3em;
+
+
+		@media #{$mq-small} {
+
+			font-size: 0.6em;
+
+		}
+
 	}
 
 	// Call-to-action buttons

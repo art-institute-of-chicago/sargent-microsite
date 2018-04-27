@@ -12,11 +12,10 @@ section.call-to-action {
 		padding-bottom: 1em;
 	}
 
-	// Come explore Gauguin
+	// Come explore exhibit
 	h1 {
 
 		@include font-copy();
-		font-style: italic;
 
 		letter-spacing: em(0.07);
 		color: $color-orange;
@@ -48,8 +47,8 @@ section.call-to-action {
 
 		a {
 			display: inline-block;
-			border-bottom: 0.05em solid white;
 			padding-bottom: 0;
+		    text-decoration: underline;
 		}
 
 	}

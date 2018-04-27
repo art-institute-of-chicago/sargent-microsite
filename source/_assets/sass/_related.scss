@@ -70,8 +70,8 @@ section.related {
 		padding-top: 1.5em;
 		padding-bottom: 1em;
 
-		$font-min: 1.4em;
-		$font-max: 1.6em;
+		$font-min: 1.3em;
+		$font-max: 1.4em;
 
 		h2 {
 
@@ -82,6 +82,8 @@ section.related {
 			line-height: 1.25;
 			color: $color-text;
 			letter-spacing: 0.08em;
+
+			margin-top: 0.25em;
 
 			text-transform: uppercase;
 
@@ -109,6 +111,9 @@ section.related {
 				font-size: $font-max;
 				padding-bottom: 1em;
 				padding-right: 0em;
+
+				margin-top: 0;
+
 			}
 
 		}
@@ -134,28 +139,26 @@ section.related {
 
 	.item {
 
-		h4 {
-			font-family: 'GaramondMTPro', serif;
-			margin-bottom: 1.25em;
-
-			font-size: 1.25em;
-		}
-
 		h5 {
 			font-family: 'BrandonGrotesqueWeb', sans-serif;
 			font-weight: bold;
 			color: #ffffff;
 
 			font-size: 0.75em;
-			height: 2em;
+			min-height: 2em;
 
 			line-height: 1.5;
 			letter-spacing: 0.25em;
 			text-transform: uppercase;
 			margin-bottom: 1em;
 
-			// Adds some definition to the letters
-			text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+		}
+
+		h4 {
+			font-family: 'GaramondMTPro', serif;
+			margin-bottom: 1.25em;
+
+			font-size: 1.25em;
 		}
 
 		p {
@@ -164,34 +167,33 @@ section.related {
 
 		@media #{$mq-small} {
 
+			h5 {
+				font-size: 0.8em;
+				min-height: 3em;
+			}
+
 			h4 {
 				font-size: 1.2em;
 			}
 
-			h5 {
-				font-size: 0.7em;
-				height: 3em;
-			}
-
 			p {
-				font-size: 1em;
+				font-size: 0.9em;
 			}
 
 		}
 
 		@media #{$mq-medium} {
 
-			h4 {
-				font-size: 1.0em;
+			h5 {
+				// font-size: 0.6em;
 			}
 
-			h5 {
-				font-size: 0.6em;
-				height: 3em;
+			h4 {
+				// font-size: 1.0em;
 			}
 
 			p {
-				font-size: 0.8em;
+				// font-size: 0.8em;
 			}
 
 		}
@@ -199,7 +201,7 @@ section.related {
 		@media #{$mq-large} {
 
 			h4 {
-				font-size: 0.95em;
+				// font-size: 0.95em;
 			}
 
 		}

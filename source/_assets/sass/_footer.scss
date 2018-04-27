@@ -93,16 +93,15 @@ footer {
 			// Social media icons
 			a {
 				display: inline-block;
-				font-size: 2em;
 				line-height: 1;
-				height: 1em;
+
 
 				vertical-align: middle;
 
 				img {
 					opacity: 1;
 					height: 100%;
-					margin: 0 0.25em;
+					margin: 0 0.5em;
 				}
 
 				&:first-of-type img {
@@ -111,6 +110,19 @@ footer {
 
 				&:last-of-type img {
 					margin-right: 0;
+				}
+
+				$height-min: 2.75em;
+				$height-max: 2em;
+
+				height: $height-min;
+
+				@media #{$mq-smallest} {
+					height: between( $height-min, $height-max, $bp-smallest, $bp-medium );
+				}
+
+				@media #{$mq-medium} {
+					height: $height-max;
 				}
 
 			}

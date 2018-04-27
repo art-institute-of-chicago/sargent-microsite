@@ -163,8 +163,8 @@ header {
 			width: calc( 28px + 0.8em );
 
 			@media (min-width: 420px) {
-				width: 3em;
-				height: 3em;
+				width: 3.25em;
+				height: 3.25em;
 			}
 
 			img {
@@ -201,7 +201,7 @@ header {
 					text-transform: uppercase;
 					letter-spacing: 0.1em;
 
-					// font-size: 1.2em;
+					font-size: 0.95em;
 
 					margin-top: 0.7em;
 				}
@@ -276,7 +276,7 @@ header {
 
 		// Needs adjustment due to header scaling
 		$font-min: 1em;
-		$font-max: 0.75em;
+		$font-max: 0.65em;
 
 		font-size: $font-min;
 

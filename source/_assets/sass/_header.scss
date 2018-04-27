@@ -4,6 +4,69 @@
 	width: 100%;
 
 	position: relative;
+
+	@mixin break-member {
+		@media (max-width: 770px) {
+			@content;
+		}
+	}
+
+
+	// This needs to be outside the header due to transform creating a new context
+	.btn-mobile.btn-ticket {
+
+		// I'm not sure why, but this didn't work..?
+
+		background-color: $color-orange;
+		height: 3em;
+		width: 3em;
+
+		border-radius: 50%;
+		padding: 0.35em;
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+
+		display: none;
+
+		@include break-member {
+			display: block;
+		}
+
+		&.btn-sticky {
+
+			position: fixed;
+			bottom: 1em;
+			right: 1em;
+
+			z-index: 2;
+
+			box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.06);
+
+		}
+
+	}
+
+	.btn {
+
+		&.btn-member {
+			@include break-member {
+				display: none;
+			}
+			margin-right: 0.5em;
+		}
+
+		&.btn-ticket {
+			@include break-member {
+				display: none;
+			}
+			margin-right: 0em;
+		}
+
+	}
+
 }
 
 header {
@@ -34,12 +97,6 @@ header {
 
 	@mixin break-dates {
 		@media (max-width: 880px) {
-			@content;
-		}
-	}
-
-	@mixin break-member {
-		@media (max-width: 770px) {
 			@content;
 		}
 	}
@@ -196,52 +253,7 @@ header {
 	}
 
 	.header-right {
-
-		.btn {
-
-			&.btn-member {
-				@include break-member {
-					display: none;
-				}
-				margin-right: 0.5em;
-			}
-
-			&.btn-ticket {
-				@include break-member {
-					display: none;
-				}
-				margin-right: 0em;
-			}
-
-		}
-
-		.btn-sticky.btn-ticket {
-
-			// I'm not sure why, but this didn't work..?
-			// position: fixed;
-			// bottom: 1em;
-			// right: 1em;
-
-			background-color: $color-orange;
-			height: 3em;
-			width: 3em;
-
-			border-radius: 50%;
-			padding: 0.35em;
-
-			img {
-				height: 100%;
-				width: 100%;
-			}
-
-			display: none;
-
-			@include break-member {
-				display: block;
-			}
-
-		}
-
+		// Buttons are defined in .header-placeholder
 	}
 
 	.sub-header {
@@ -278,7 +290,6 @@ header {
 
 	}
 
-
 	&.sticky {
 
 		transform: translate3d(0, 0, 0);
@@ -296,5 +307,7 @@ header {
 			height: calc( 28px + 0.8em );
 			width: calc( 28px + 0.8em );
 		}
+
 	}
+
 }

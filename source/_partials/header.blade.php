@@ -33,10 +33,6 @@
                 <a class="btn btn-header btn-ticket" href="https://sales.artic.edu/admissiondate" target="_blank" role="menuitem"><span class="verb">Buy </span>Tickets</a>
             </span>
 
-            <a class="btn-sticky btn-ticket" href="https://sales.artic.edu/admissiondate" target="_blank" role="menuitem">
-                <img src="images/ticket.svg" alt="Buy Tickets"/>
-            </a>
-
         </div>
 
     </div>
@@ -50,5 +46,10 @@
 
 </header>
 
-{{-- Wrapping header into the placeholder prooved to provide smoother transitions --}}
+{{-- This has to be outside the header due to transform creating a new stacking context --}}
+<a class="btn-mobile btn-sticky btn-ticket" href="https://sales.artic.edu/admissiondate" target="_blank" role="menuitem">
+    <img src="images/ticket.svg" alt="Buy Tickets"/>
+</a>
+
+{{-- Wrapping header into the placeholder proved to provide smoother transitions --}}
 </div>

@@ -150,7 +150,7 @@ section.call-to-action ul li a {
 	color: $color-green;
 
 	font-weight: bold;
-	letter-spacing: 1px;
+	letter-spacing: 0.13em;
 
 	// Creates consistent height w/ .btn-alt
 	border: 3px solid $color-orange;
@@ -192,7 +192,7 @@ section.call-to-action ul li a {
 
 		font-size: 0.8em;
 
-		letter-spacing: 0.1em;
+		letter-spacing: 0.15em;
 		padding: 18px 38px 10px;
 
 	}

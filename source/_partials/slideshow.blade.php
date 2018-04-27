@@ -11,13 +11,8 @@
 				<div class="swiper-slide" data-hash="{{ ++$index }}">
 
 					<div
-						class="slide-mobile"
-						style="background-image: url('images/content/slideshow-mobile-{{$image}}.jpg')"
-					></div>
-
-					<div
-						class="slide-desktop"
-						style="background-image: url('images/content/slideshow-desktop-{{$image}}.jpg')"
+						class="slide-foobar slide-mobile"
+						data-slide-image="{{$image}}"
 					></div>
 
 				</div>

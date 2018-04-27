@@ -28,4 +28,47 @@ $(document).ready( function() {
 
 	});
 
+	// Replace background images based on screen width
+	var $slides = $('.slide-foobar');
+	var $window = $(window);
+	var $body = $("body");
+
+	var swapSlide = function( slide, screen ) {
+
+		var $slide = $( slide );
+		var image = $slide.attr('data-slide-image');
+
+		$slide.attr('style', "background-image: url('images/content/slideshow-" + screen + "-" + image +  ".jpg')");
+
+	};
+
+	var swapSlideImageClass = function() {
+
+		// Synchronizing this to mq-smallish in _slideshow.scss
+		var win_width_in_em = $window.width() / parseFloat($body.css("font-size"));
+
+		if( win_width_in_em < 48 )
+		{
+
+			$slides.removeClass('slide-desktop');
+			$slides.addClass('slide-mobile');
+
+			$slides.each( function( i, slide ) { swapSlide( slide, 'mobile') } );
+
+		} else {
+
+			$slides.removeClass('slide-mobile');
+			$slides.addClass('slide-desktop');
+
+			$slides.each( function( i, slide ) { swapSlide( slide, 'desktop') } );
+
+		}
+
+	};
+
+
+	swapSlideImageClass();
+
+	$window.resize( swapSlideImageClass );
+
 });

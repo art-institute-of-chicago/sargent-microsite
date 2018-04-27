@@ -27,6 +27,12 @@ html, body {
 
 }
 
+// Anti-aliasing for fonts (sub-pixel rendering)
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 body {
 
 	@include font-copy();

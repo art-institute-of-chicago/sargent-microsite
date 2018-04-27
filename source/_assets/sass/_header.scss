@@ -155,11 +155,10 @@ header {
 				font-family: 'GaramondMTPro', serif;
 				font-style: italic;
 
-				letter-spacing: em(0.12);
+				letter-spacing: 0.015em;
+				font-size: 1.2em;
 
-				font-size: 0.95em;
-
-				margin-top: 0.5em;
+				margin-top: 0.3em;
 
 				color: #fff;
 
@@ -167,7 +166,7 @@ header {
 
 			@media #{$mq-small} {
 				.exhibit {
-					padding: 0 1em;
+					padding: 0 1em 0 1.25em;
 				}
 			}
 

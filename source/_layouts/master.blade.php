@@ -12,10 +12,6 @@
 	<link href="css/reset.css" rel="stylesheet">
 	<script src="//code.jquery.com/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
 
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-
 	<!-- Swiper -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>

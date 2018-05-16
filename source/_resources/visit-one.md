@@ -1,7 +1,7 @@
 ---
 extends: "_partials.resource"
 weight: 10
-title: "Pop-UP Bar at the Chicago Athletic Association"
+title: "Pop-Up Bar at the Chicago Athletic Association"
 type: "A Gilded Age Experience"
 image: 
 alt: 

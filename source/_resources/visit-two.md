@@ -1,7 +1,7 @@
 ---
 extends: "_partials.resource"
 weight: 30
-title: "Title for that link there"
+title: "Sargent Hotel and Restaurant Packages"
 type: "In Chicago"
-link: "http://www.artic.edu"
+link: "http://www.artic.edu/visit/visiting-chicago"
 ---

@@ -11,5 +11,5 @@ creditAccessionNumber: "Collection of Musee d'Orsay"
 # Obj: 234895
 ---
 
-Lorem ipsum.
+
 

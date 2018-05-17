@@ -11,5 +11,5 @@ creditAccessionNumber: "Collection of Brooklyn Museum"
 # Obj: 234882
 ---
 
-Lorem ipsum.
+
 

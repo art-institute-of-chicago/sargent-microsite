@@ -12,7 +12,7 @@ Washington, Gift of the Avalon Foundation, 1962.4.1"
 # Obj: 234898
 ---
 
-Lorem ipsum.
+
 
 
 

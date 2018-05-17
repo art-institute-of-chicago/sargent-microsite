@@ -10,4 +10,4 @@ materialDimensions: "Oil on canvas; 72.4 x 53.3 cm (28 1/2 x 21 in.)"
 creditAccessionNumber: "Anonymous loan; 8.2002"
 ---
 
-Lorem ipsum.
+

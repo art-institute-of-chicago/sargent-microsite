@@ -20,8 +20,8 @@ $(document).ready( function() {
 		},
 
 		autoplayDisableOnInteraction: false,
-		autoplay: 5000,
-		speed: 500,
+		autoplay: 3000,
+		speed: 650,
 
 		pagination: '.swiper-pagination',
 		paginationClickable: true,

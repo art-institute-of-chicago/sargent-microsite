@@ -11,4 +11,4 @@ materialDimensions: "Watercolor and opaque watercolor with wax resist over graph
 creditAccessionNumber: "Anonymous loan; 310.1996"
 ---
 
-Lorem ipsum.
+

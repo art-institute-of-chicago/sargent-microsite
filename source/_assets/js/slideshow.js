@@ -21,7 +21,7 @@ $(document).ready( function() {
 
 		autoplayDisableOnInteraction: false,
 		autoplay: 5000,
-		speed: 650,
+		speed: 500,
 
 		pagination: '.swiper-pagination',
 		paginationClickable: true,

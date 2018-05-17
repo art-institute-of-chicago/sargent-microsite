@@ -10,4 +10,4 @@ images:
     alt: "A painting of a young women with her hands on her hips standing in a confident pose. She wears an opulent yellow dress and looks directly at the viewer."
 ---
 
-Sargent became the most sought-after portraitist of his generation on both sides of the Atlantic. Born in Italy to American parents, he traveled the world in search of subjects and worked professionally for more than 50 years creating vibrant, lively paintings.
+Sargent (1856–1925) became the most sought-after portraitist of his generation on both sides of the Atlantic. Born in Italy to American parents, he traveled the world in search of subjects and worked professionally for more than 50 years creating vibrant, lively paintings.

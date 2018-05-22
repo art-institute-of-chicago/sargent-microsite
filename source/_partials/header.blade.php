@@ -18,7 +18,7 @@
 
                 <span class="dates">
                     <span class="start">{{ $page->dates['start'] }}</span
-                    ><span class="dash"> – </span
+                    ><span class="dash">–</span
                     ><span class="end">{{ $page->dates['end'] }}</span>
                 </span>
 

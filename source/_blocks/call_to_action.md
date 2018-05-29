@@ -2,7 +2,7 @@
 extends: "_partials.call_to_action"
 weight: 1300
 section: "content"
-title: "Come explore Sargent for yourself."
+title: "John Singer Sargent in Chicago's Gilded Age"
 subtitle: "Learn more about how to plan your visit"
 subtitleLink: "http://www.artic.edu/visit"
 buttonOne: "Become a member"

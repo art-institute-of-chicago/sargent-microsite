@@ -6,8 +6,9 @@ artistName: John Singer Sargent
 artistPlaceDates: "American, 1856-1925"
 title: "La Carmencita"
 date: "1890"
-materialDimensions: "Oil on canvas; 229 x 140 cm (90 3/16 x 55 1/8 in.)"
-creditAccessionNumber: "Collection of Musee d'Orsay"
+materialDimensions: "Oil on canvas; 232 x 142 cm (91 3/8 x 55 15/16 in.)"
+creditAccessionNumber: "Musee d'Orsay"
+creditAccessionNumber: "© RMN (Musée d’Orsay) / Gérard Blot"
 # Obj: 234895
 ---
 

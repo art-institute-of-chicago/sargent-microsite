@@ -11,3 +11,5 @@ images:
 ---
 
 Sargent (1856–1925) became the most sought-after portraitist of his generation on both sides of the Atlantic. Born in Italy to American parents, he traveled the world in search of subjects and worked professionally for more than 50 years creating vibrant, lively paintings.
+ 
+His assertive portrait of Carmen Dauset (pictured at left) commanded the attention of critics and museumgoers when it was displayed at the Art Institute in 1890 and helped put Chicago on the map as a center for contemporary art and culture.

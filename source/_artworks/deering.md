@@ -1,6 +1,6 @@
 ---
 id: "deering"
-link: "http://www.artic.edu/aic/collections/artwork/159721"
+link:
 image: "images/dzis/IM027378-int_print.dzi"
 artistName: John Singer Sargent
 artistPlaceDates: "American, 1856-1925"

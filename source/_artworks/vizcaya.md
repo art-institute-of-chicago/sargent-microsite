@@ -6,8 +6,8 @@ artistName: John Singer Sargent
 artistPlaceDates: "American, 1856-1925"
 title: "The Loggia, Vizcaya"
 date: "1917"
-materialDimensions: "Watercolor and opaque watercolor with wax resist over graphite on wove paper
-; 402 x 531 mm. The Art Institute of Chicago, Anonymous loan; 310.1996"
+materialDimensions: "Watercolor and opaque watercolor with wax resist over graphite on wove paper; 402 x 531 mm. 
+The Art Institute of Chicago, Anonymous loan; 310.1996"
 creditAccessionNumber: 
 ---
 

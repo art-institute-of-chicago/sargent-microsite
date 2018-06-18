@@ -1,7 +1,7 @@
 ---
 extends: "_partials.resource"
 weight: 20
-title: "Visit the pop-up bar at the Chicago Athletic Association"
+title: "Pop-up bar at Chicago Athletic Association"
 type: "Dear Carmencita"
 image: 
 alt: 

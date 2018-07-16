@@ -1,9 +1,9 @@
 ---
 extends: "_partials.resource"
 weight: 20
-title: "Pop-up bar at Chicago Athletic Association"
-type: "Dear Carmencita"
+title: "John Singer Sargent and Chicago's Gilded Age catalog"
+type: "Catalog"
 image: 
 alt: 
-link: "http://www.artic.edu/visit/visiting-chicago"
+link: "http://www.artinstituteshop.org/item.aspx?productId=7987"
 ---
